@@ -165,7 +165,7 @@ const Pricing = () => {
                   className={`w-full ${plan.highlighted ? 'bg-gradient-to-r from-primary to-accent hover:opacity-90' : ''}`}
                   asChild
                 >
-                  <Link to={plan.name === "ENTERPRISE" ? "mailto:support@rootknow.com" : "/app"}>
+                  <Link to={plan.name === "ENTERPRISE" ? "mailto:management@rootknow.com" : "/app"}>
                     {plan.cta}
                   </Link>
                 </Button>
