@@ -6,17 +6,17 @@ const Footer = () => {
       <div className="container">
         <div className="flex flex-col items-center gap-6 text-center">
           {/* Company Name */}
-          <div className="space-y-1">
-            <p className="text-lg font-semibold text-foreground">
+          <div className="space-y-2">
+            <p className="text-xl font-bold text-primary">
               RootKnow Global Inc.
             </p>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-foreground/80">
               Delaware C-Corporation • File Number: 10421545
             </p>
           </div>
 
           {/* Address */}
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-foreground/70">
             8 The Green, Ste R, Dover, DE 19901, USA
           </p>
 

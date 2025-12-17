@@ -222,36 +222,51 @@ const Platform = () => {
             ))}
           </div>
 
-          {/* Three Steps */}
+          {/* Three Steps to Your Custom SaaS */}
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">How It Works</h2>
-            <p className="text-muted-foreground">From idea to production in three simple steps.</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Three Steps to Your Custom SaaS</h2>
+            <p className="text-muted-foreground">Our process is simple: define, build, deploy.</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 relative max-w-4xl mx-auto">
-            {/* Arrows (desktop only) */}
-            <div className="hidden md:flex absolute top-1/2 left-1/3 -translate-y-1/2 -translate-x-1/2">
-              <ArrowRight className="w-8 h-8 text-primary animate-pulse" />
-            </div>
-            <div className="hidden md:flex absolute top-1/2 left-2/3 -translate-y-1/2 -translate-x-1/2">
-              <ArrowRight className="w-8 h-8 text-primary animate-pulse" />
-            </div>
-
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {[
-              { num: 1, title: "Describe Your App", desc: "Tell us your SaaS idea. We already understand your industry." },
-              { num: 2, title: "RootKnow Generates 95%", desc: "Full architecture: auth, payments, admin, workflows—ready in hours." },
-              { num: 3, title: "Customize the 5%", desc: "Add your unique differentiators. Deploy immediately with real users." },
+              { 
+                num: "01", 
+                icon: Database,
+                title: "Define Your Logic", 
+                desc: "Simply enter your job role and the idea you want to solve in your profession. That's it." 
+              },
+              { 
+                num: "02", 
+                icon: Zap,
+                title: "Our Engine Builds", 
+                desc: "RootKnow's R-Engine™ instantly compiles your logic into a fully functional SaaS application (database, API, UI)." 
+              },
+              { 
+                num: "03", 
+                icon: Rocket,
+                title: "Deploy & Monetize", 
+                desc: "Launch your tool internally or sell it to others. RootKnow handles hosting, compliance, and scaling." 
+              },
             ].map((step, index) => (
               <div 
                 key={index} 
-                className="glow-card rounded-xl p-8 text-center group hover:scale-105 transition-all duration-300 animate-fade-in-up"
+                className="glow-card rounded-xl p-8 group hover:scale-105 transition-all duration-300 animate-fade-in-up relative"
                 style={{ animationDelay: `${index * 0.15}s` }}
               >
-                <div className="w-12 h-12 bg-gradient-to-br from-primary to-purple-500 rounded-full flex items-center justify-center mx-auto mb-6 text-xl font-bold text-white group-hover:scale-110 transition-transform">
-                  {step.num}
+                {/* Step number with line */}
+                <div className="flex items-center gap-3 mb-6">
+                  <span className="text-sm font-medium text-primary">{step.num}</span>
+                  <div className="flex-1 h-px bg-gradient-to-r from-primary/50 to-transparent"></div>
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-3">{step.title}</h3>
-                <p className="text-muted-foreground">{step.desc}</p>
+                
+                {/* Icon */}
+                <div className="w-14 h-14 bg-gradient-to-br from-primary to-purple-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <step.icon className="w-7 h-7 text-white" />
+                </div>
+                
+                <h3 className="text-xl font-bold text-foreground mb-3">{step.title}</h3>
+                <p className="text-muted-foreground leading-relaxed">{step.desc}</p>
               </div>
             ))}
           </div>
