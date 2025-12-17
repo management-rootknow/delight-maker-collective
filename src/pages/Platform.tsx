@@ -1,5 +1,5 @@
 import Layout from "@/components/layout/Layout";
-import { ArrowRight, Brain, Database, Cpu, Zap, Shield, Settings, Cloud, CheckCircle, Sparkles, Users, Rocket, Target } from "lucide-react";
+import { ArrowRight, Brain, Database, Cpu, Zap, Shield, Settings, Cloud, CheckCircle, Sparkles, Users, Rocket } from "lucide-react";
 
 const Platform = () => {
   return (
@@ -14,20 +14,20 @@ const Platform = () => {
         <div className="container relative z-10">
           <div className="text-center max-w-4xl mx-auto mb-16 animate-fade-in">
             <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6 shimmer">
-              Sức Mạnh Cốt Lõi
+              Core Power
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              <span className="gradient-text">2 IP Độc Quyền</span>
+              <span className="gradient-text">2 Proprietary IPs</span>
               <br />
-              <span className="text-foreground">Tạo Nên Sự Khác Biệt</span>
+              <span className="text-foreground">That Make The Difference</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              Kết hợp <span className="text-primary font-semibold">Career Ontology</span> + <span className="text-accent font-semibold">Engeni AI</span> = 
+              Combining <span className="text-primary font-semibold">Career Ontology</span> + <span className="text-purple-500 font-semibold">Engeni AI</span> = 
               <br className="hidden md:block" />
-              <span className="gradient-text font-bold"> App chuyên nghiệp trong nháy mắt</span>
+              <span className="gradient-text font-bold"> Professional Apps in Seconds</span>
             </p>
             <p className="text-lg text-muted-foreground">
-              Vượt trội hoàn toàn so với các công cụ vibe coding thông thường
+              Completely outperforming all other vibe coding tools
             </p>
           </div>
 
@@ -38,26 +38,26 @@ const Platform = () => {
               <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-2xl" />
               <div className="relative z-10">
                 <div className="w-16 h-16 bg-gradient-to-br from-primary to-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg">
-                  <Users className="w-8 h-8 text-primary-foreground" />
+                  <Users className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-foreground mb-4">Career Ontology</h3>
-                <p className="text-lg text-primary font-semibold mb-3">Bản Thể Học Nghề Nghiệp</p>
+                <p className="text-lg text-primary font-semibold mb-3">Professional Knowledge Graph</p>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Hiểu sâu về workflow, quy trình của từng ngành nghề</span>
+                    <span>Deep understanding of workflows for each industry</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Nắm bắt pain points thực tế của người trong nghề</span>
+                    <span>Captures real pain points of professionals</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Database nghề nghiệp với hàng nghìn use cases thực tế</span>
+                    <span>Career database with thousands of real use cases</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Nghiên cứu xã hội học về hành vi và nhu cầu nghề nghiệp</span>
+                    <span>Sociological research on professional behaviors & needs</span>
                   </li>
                 </ul>
               </div>
@@ -65,29 +65,29 @@ const Platform = () => {
 
             {/* Engeni AI */}
             <div className="glow-card rounded-2xl p-8 group hover:scale-[1.02] transition-all duration-500 animate-fade-in-up relative overflow-hidden" style={{ animationDelay: "0.15s" }}>
-              <div className="absolute top-0 right-0 w-32 h-32 bg-accent/10 rounded-full blur-2xl" />
+              <div className="absolute top-0 right-0 w-32 h-32 bg-purple-500/10 rounded-full blur-2xl" />
               <div className="relative z-10">
-                <div className="w-16 h-16 bg-gradient-to-br from-accent to-purple-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg">
-                  <Brain className="w-8 h-8 text-primary-foreground" />
+                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg">
+                  <Brain className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-foreground mb-4">Engeni AI Engine</h3>
-                <p className="text-lg text-accent font-semibold mb-3">AI Sinh Code Thông Minh</p>
+                <p className="text-lg text-purple-500 font-semibold mb-3">Intelligent Code Generation</p>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <span>Sinh code production-ready, không phải prototype</span>
+                    <CheckCircle className="w-5 h-5 text-purple-500 flex-shrink-0 mt-0.5" />
+                    <span>Generates production-ready code, not prototypes</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <span>Tự động tạo architecture 4-Organ hoàn chỉnh</span>
+                    <CheckCircle className="w-5 h-5 text-purple-500 flex-shrink-0 mt-0.5" />
+                    <span>Auto-creates complete 4-Organ architecture</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <span>Tích hợp best practices từ hàng nghìn dự án thực tế</span>
+                    <CheckCircle className="w-5 h-5 text-purple-500 flex-shrink-0 mt-0.5" />
+                    <span>Integrates best practices from thousands of real projects</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <span>Tối ưu performance và bảo mật từ đầu</span>
+                    <CheckCircle className="w-5 h-5 text-purple-500 flex-shrink-0 mt-0.5" />
+                    <span>Optimized for performance and security from day one</span>
                   </li>
                 </ul>
               </div>
@@ -96,33 +96,33 @@ const Platform = () => {
 
           {/* The Magic Combination */}
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-4 px-8 py-4 bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 rounded-full border border-primary/30 animate-pulse-slow">
+            <div className="inline-flex items-center gap-4 px-8 py-4 bg-gradient-to-r from-primary/20 via-purple-500/20 to-primary/20 rounded-full border border-primary/30">
               <Users className="w-8 h-8 text-primary" />
-              <span className="text-2xl font-bold gradient-text">+</span>
-              <Brain className="w-8 h-8 text-accent" />
-              <span className="text-2xl font-bold gradient-text">=</span>
+              <span className="text-2xl font-bold text-foreground">+</span>
+              <Brain className="w-8 h-8 text-purple-500" />
+              <span className="text-2xl font-bold text-foreground">=</span>
               <Sparkles className="w-8 h-8 text-primary" />
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-8 mb-4">
-              <span className="gradient-text">App Của Người Trong Nghề</span>
+              <span className="gradient-text">Apps Built By Professionals, For Professionals</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Không chỉ code đẹp, mà còn <span className="text-primary font-semibold">đúng nghiệp vụ</span>, 
-              <span className="text-accent font-semibold"> giải quyết đúng vấn đề</span>, 
-              và <span className="text-foreground font-semibold">sẵn sàng production</span>
+              Not just beautiful code, but <span className="text-primary font-semibold">domain-accurate</span>, 
+              <span className="text-purple-500 font-semibold"> solving the right problems</span>, 
+              and <span className="text-foreground font-semibold">production-ready</span>
             </p>
           </div>
 
           {/* Why Better Than Vibe Coding */}
           <div className="glow-card rounded-2xl p-8 md:p-12 max-w-5xl mx-auto mb-20 relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5" />
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-purple-500/5" />
             <div className="relative z-10">
               <div className="text-center mb-10">
-                <span className="inline-block px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-medium mb-4">
-                  So Sánh Thực Tế
+                <span className="inline-block px-4 py-2 bg-purple-500/10 text-purple-500 rounded-full text-sm font-medium mb-4">
+                  Real Comparison
                 </span>
                 <h3 className="text-2xl md:text-3xl font-bold text-foreground">
-                  Tại Sao Vượt Trội Hơn <span className="gradient-text">Vibe Coding?</span>
+                  Why We <span className="gradient-text">Outperform Vibe Coding?</span>
                 </h3>
               </div>
               
@@ -130,24 +130,24 @@ const Platform = () => {
                 <div className="space-y-4">
                   <h4 className="text-lg font-semibold text-muted-foreground flex items-center gap-2">
                     <span className="w-8 h-8 bg-muted rounded-full flex items-center justify-center text-sm">❌</span>
-                    Vibe Coding Thông Thường
+                    Standard Vibe Coding
                   </h4>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-destructive">•</span>
-                      <span>Chỉ sinh code generic, không hiểu ngành nghề</span>
+                      <span>Only generates generic code, no industry understanding</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-destructive">•</span>
-                      <span>Phải mô tả lại từng chi tiết nghiệp vụ</span>
+                      <span>Must re-describe every business detail</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-destructive">•</span>
-                      <span>Code prototype, cần refactor nhiều</span>
+                      <span>Prototype code, needs heavy refactoring</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-destructive">•</span>
-                      <span>Thiếu best practices của ngành</span>
+                      <span>Missing industry best practices</span>
                     </li>
                   </ul>
                 </div>
@@ -160,19 +160,19 @@ const Platform = () => {
                   <ul className="space-y-3 text-foreground">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span><strong>Hiểu sẵn</strong> workflow và pain points của nghề</span>
+                      <span><strong>Already understands</strong> your industry workflows & pain points</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span><strong>Tự động</strong> áp dụng logic nghiệp vụ chuẩn</span>
+                      <span><strong>Auto-applies</strong> standard business logic</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span><strong>Production-ready</strong> ngay từ đầu</span>
+                      <span><strong>Production-ready</strong> from the start</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span><strong>Tích hợp</strong> best practices từ nghìn dự án thực</span>
+                      <span><strong>Integrates</strong> best practices from thousands of real projects</span>
                     </li>
                   </ul>
                 </div>
@@ -189,23 +189,23 @@ const Platform = () => {
         <div className="container relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
             <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6">
-              Kiến Trúc
+              Architecture
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-              <span className="gradient-text">4-Organ</span>
+              <span className="gradient-text">The 4-Organ</span>
               <span className="text-foreground"> Architecture</span>
             </h2>
             <p className="text-lg text-muted-foreground">
-              Tốc độ mà thiếu kiến trúc chỉ là thất bại nhanh. RootKnow sinh ra cả hai.
+              Speed without architecture is just fast failure. RootKnow generates both.
             </p>
           </div>
 
           {/* 4-Organ System */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
             {[
-              { icon: Cpu, title: "UI (Skin)", desc: "Giao diện đẹp, responsive với React hiện đại", delay: "0s" },
-              { icon: Database, title: "Data (Bones)", desc: "30+ bảng chuẩn hóa với GraphQL real-time", delay: "0.1s" },
-              { icon: Brain, title: "Brain (Logic)", desc: "Business rules engine có thể cấu hình", delay: "0.2s" },
+              { icon: Cpu, title: "UI (Skin)", desc: "Beautiful, responsive interfaces with modern React", delay: "0s" },
+              { icon: Database, title: "Data (Bones)", desc: "30+ normalized tables with real-time GraphQL", delay: "0.1s" },
+              { icon: Brain, title: "Brain (Logic)", desc: "External, configurable business rules engine", delay: "0.2s" },
               { icon: Zap, title: "Nerves (Async)", desc: "Workflows, sagas & background jobs", delay: "0.3s" },
             ].map((item, index) => (
               <div 
@@ -213,8 +213,8 @@ const Platform = () => {
                 className="glow-card rounded-xl p-6 text-center group hover:scale-105 transition-all duration-300 animate-fade-in-up"
                 style={{ animationDelay: item.delay }}
               >
-                <div className="w-14 h-14 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                  <item.icon className="w-7 h-7 text-primary-foreground" />
+                <div className="w-14 h-14 bg-gradient-to-br from-primary to-purple-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                  <item.icon className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="text-lg font-semibold text-foreground mb-2">{item.title}</h3>
                 <p className="text-sm text-muted-foreground">{item.desc}</p>
@@ -224,8 +224,8 @@ const Platform = () => {
 
           {/* Three Steps */}
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">Cách Hoạt Động</h2>
-            <p className="text-muted-foreground">Từ ý tưởng đến production chỉ trong 3 bước đơn giản.</p>
+            <h2 className="text-3xl font-bold text-foreground mb-4">How It Works</h2>
+            <p className="text-muted-foreground">From idea to production in three simple steps.</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 relative max-w-4xl mx-auto">
@@ -238,16 +238,16 @@ const Platform = () => {
             </div>
 
             {[
-              { num: 1, title: "Mô Tả Ý Tưởng", desc: "Nói về app bạn muốn. Hệ thống tự hiểu ngành nghề của bạn." },
-              { num: 2, title: "RootKnow Sinh 95%", desc: "Full kiến trúc: auth, payments, admin, workflows—sẵn sàng trong giờ." },
-              { num: 3, title: "Customize 5%", desc: "Thêm điểm khác biệt của riêng bạn. Deploy ngay với users thật." },
+              { num: 1, title: "Describe Your App", desc: "Tell us your SaaS idea. We already understand your industry." },
+              { num: 2, title: "RootKnow Generates 95%", desc: "Full architecture: auth, payments, admin, workflows—ready in hours." },
+              { num: 3, title: "Customize the 5%", desc: "Add your unique differentiators. Deploy immediately with real users." },
             ].map((step, index) => (
               <div 
                 key={index} 
                 className="glow-card rounded-xl p-8 text-center group hover:scale-105 transition-all duration-300 animate-fade-in-up"
                 style={{ animationDelay: `${index * 0.15}s` }}
               >
-                <div className="w-12 h-12 bg-gradient-to-br from-primary to-accent text-primary-foreground rounded-full flex items-center justify-center mx-auto mb-6 text-xl font-bold group-hover:scale-110 transition-transform">
+                <div className="w-12 h-12 bg-gradient-to-br from-primary to-purple-500 rounded-full flex items-center justify-center mx-auto mb-6 text-xl font-bold text-white group-hover:scale-110 transition-transform">
                   {step.num}
                 </div>
                 <h3 className="text-xl font-semibold text-foreground mb-3">{step.title}</h3>
@@ -260,27 +260,27 @@ const Platform = () => {
 
       {/* What's Included */}
       <section className="py-16 lg:py-24 bg-background relative overflow-hidden">
-        <div className="absolute bottom-0 right-0 w-72 h-72 bg-accent/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-0 w-72 h-72 bg-purple-500/20 rounded-full blur-3xl" />
         
         <div className="container relative z-10">
           <div className="text-center mb-16 animate-fade-in">
             <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6">
-              Tính Năng
+              Features
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Bạn Nhận Được <span className="gradient-text">(95% Hoàn Chỉnh)</span>
+              What You Get <span className="gradient-text">(95% Complete)</span>
             </h2>
             <p className="text-lg text-muted-foreground">
-              Mọi thứ cần để launch. Không cần homework.
+              Everything you need to launch. No homework required.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
-              { icon: Shield, title: "Authentication", desc: "Email, social login, password reset—tất cả hoạt động" },
-              { icon: Database, title: "Database Schema", desc: "30+ bảng chuẩn hóa, migrations đầy đủ" },
-              { icon: Settings, title: "Admin Dashboard", desc: "Quản lý users, analytics, reports" },
-              { icon: Zap, title: "Payment Processing", desc: "Tích hợp thanh toán, subscriptions, webhooks" },
+              { icon: Shield, title: "Authentication", desc: "Email, social login, password reset—all working" },
+              { icon: Database, title: "Database Schema", desc: "30+ normalized tables, migrations included" },
+              { icon: Settings, title: "Admin Dashboard", desc: "User management, analytics, reports" },
+              { icon: Zap, title: "Payment Processing", desc: "Payment integration, subscriptions, webhooks" },
               { icon: Cloud, title: "Background Jobs", desc: "Emails, notifications, async processing" },
               { icon: Rocket, title: "Deployment Ready", desc: "Docker, CI/CD, environment configs" },
             ].map((item, index) => (
@@ -289,8 +289,8 @@ const Platform = () => {
                 className="flex items-start gap-4 glow-card p-6 rounded-lg group hover:scale-[1.02] transition-all duration-300 animate-fade-in-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center flex-shrink-0">
-                  <item.icon className="w-5 h-5 text-primary-foreground" />
+                <div className="w-10 h-10 bg-gradient-to-br from-primary to-purple-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <item.icon className="w-5 h-5 text-white" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">{item.title}</h4>
@@ -315,30 +315,30 @@ const Platform = () => {
               <span className="gradient-text">Production-First</span> DNA
             </h2>
             <p className="text-lg text-muted-foreground">
-              RootKnow sinh ra hệ thống production, không phải demos.
+              RootKnow generates production systems, not demos.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-4">
             {[
               "Error boundaries & graceful fallbacks",
-              "Retry logic với exponential backoff",
-              "Circuit breakers cho external services",
+              "Retry logic with exponential backoff",
+              "Circuit breakers for external services",
               "Health checks & readiness probes",
               "Observability & monitoring ready",
               "ACID transactions & data integrity",
               "Input validation schemas",
               "SQL injection & XSS protection",
               "CSRF tokens & rate limiting",
-              "Audit logs cho compliance",
+              "Audit logs for compliance",
             ].map((item, index) => (
               <div 
                 key={index} 
                 className="flex items-center gap-3 p-4 glow-card rounded-lg group hover:scale-[1.02] transition-all duration-300 animate-fade-in-up"
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
-                <div className="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center flex-shrink-0">
-                  <CheckCircle className="w-4 h-4 text-primary-foreground" />
+                <div className="w-8 h-8 bg-gradient-to-br from-primary to-purple-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <CheckCircle className="w-4 h-4 text-white" />
                 </div>
                 <span className="text-foreground">{item}</span>
               </div>
