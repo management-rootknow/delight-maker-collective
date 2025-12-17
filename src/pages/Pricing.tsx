@@ -57,38 +57,38 @@ const Pricing = () => {
   ];
 
   const comparison = [
-    { feature: "Completeness", trm: "95%", others: "60%" },
-    { feature: "Time to Deploy", trm: "2-4 hours", others: "1-2 weeks" },
-    { feature: "Pricing Model", trm: "Fixed, one-time", others: "Credit burnout" },
-    { feature: "Business Rules", trm: "External (GoRules)", others: "Hardcoded" },
-    { feature: "Async Workflows", trm: "Trigger.dev", others: "Blocking" },
-    { feature: "Code Ownership", trm: "100% yours", others: "Varies" },
+    { feature: "Completeness", rootknow: "95%", others: "60%" },
+    { feature: "Time to Deploy", rootknow: "2-4 hours", others: "1-2 weeks" },
+    { feature: "Pricing Model", rootknow: "Fixed, one-time", others: "Credit burnout" },
+    { feature: "Business Rules", rootknow: "External config", others: "Hardcoded" },
+    { feature: "Async Workflows", rootknow: "Built-in", others: "Blocking" },
+    { feature: "Code Ownership", rootknow: "100% yours", others: "Varies" },
   ];
 
   const faqs = [
     {
       question: "Why one-time pricing instead of subscription?",
-      answer: "You pay once, you own the code forever. No credit burnout, no monthly surprises. Traditional development costs $50k+. TRM gives you production-ready code for $800.",
+      answer: "You pay once, you own the code forever. No credit burnout, no monthly surprises. Traditional development costs $50k+. RootKnow gives you production-ready code for $800.",
     },
     {
-      question: "What if TRM goes away?",
-      answer: "You own the generated code. It's your repo. If TRM disappeared tomorrow, you have a working app using standard tech stack (Next.js, PostgreSQL). Any dev can maintain it.",
+      question: "What if RootKnow goes away?",
+      answer: "You own the generated code. It's your repo. If RootKnow disappeared tomorrow, you have a working app using standard tech stack. Any dev can maintain it.",
     },
     {
-      question: "Can TRM integrate with [specific service]?",
-      answer: "If it has an API, yes. TRM generates standard code—add any API call you need. Common integrations (Stripe, email, analytics) are built-in.",
+      question: "Can RootKnow integrate with specific services?",
+      answer: "If it has an API, yes. RootKnow generates standard code—add any API call you need. Common integrations (payment, email, analytics) are built-in.",
     },
     {
-      question: "My industry is unique, this won't work",
-      answer: "Most apps are: users, content, transactions, permissions. The business logic is unique—that's why TRM uses GoRules for external configuration.",
+      question: "My industry is unique, will this work?",
+      answer: "Most apps are: users, content, transactions, permissions. The business logic is unique—that's why RootKnow uses external configuration for business rules.",
     },
     {
-      question: "How secure is TRM-generated code?",
-      answer: "Multi-layer security: input validation (Zod), SQL injection prevention, XSS protection, CSRF tokens, rate limiting. You own the code—run your own security audit.",
+      question: "How secure is RootKnow-generated code?",
+      answer: "Multi-layer security: input validation, SQL injection prevention, XSS protection, CSRF tokens, rate limiting. You own the code—run your own security audit.",
     },
     {
       question: "What's the catch?",
-      answer: "No catch. The economics are different: Traditional = 1 app per 3 months. TRM = 1 app per 4 hours. We trade time for volume—more apps at accessible pricing.",
+      answer: "No catch. The economics are different: Traditional = 1 app per 3 months. RootKnow = 1 app per 4 hours. We trade time for volume—more apps at accessible pricing.",
     },
   ];
 
@@ -160,12 +160,12 @@ const Pricing = () => {
           {/* Comparison Table */}
           <div className="max-w-3xl mx-auto">
             <h2 className="text-2xl font-bold text-foreground text-center mb-8">
-              TRM vs Others
+              RootKnow vs Others
             </h2>
             <div className="bg-card rounded-xl border border-border overflow-hidden">
               <div className="grid grid-cols-3 bg-muted/50 p-4 font-semibold text-foreground">
                 <div>Feature</div>
-                <div className="text-center text-primary">TRM</div>
+                <div className="text-center text-primary">RootKnow</div>
                 <div className="text-center">Others</div>
               </div>
               {comparison.map((row, index) => (
@@ -173,7 +173,7 @@ const Pricing = () => {
                   <div className="text-muted-foreground">{row.feature}</div>
                   <div className="text-center font-medium text-foreground flex items-center justify-center gap-1">
                     <Check className="w-4 h-4 text-primary" />
-                    {row.trm}
+                    {row.rootknow}
                   </div>
                   <div className="text-center text-muted-foreground flex items-center justify-center gap-1">
                     <X className="w-4 h-4 text-destructive/60" />

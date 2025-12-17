@@ -15,10 +15,10 @@ const Index = () => {
                 95% Complete. 100% Production-Ready.
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-                While Others Generate Code, TRM Ships Products.
+                The Instant Software Engine for Professionals.
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-xl">
-                TRM generates complete, production-ready applications in hours. Authentication, payments, admin dashboard—all working, all included. Zero coding required.
+                RootKnow generates complete, production-ready applications in hours. Authentication, payments, admin dashboard—all working, all included. Zero coding required.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" asChild className="text-base px-8">
@@ -54,7 +54,7 @@ const Index = () => {
                       <div className="w-3 h-3 rounded-full bg-yellow-400/60"></div>
                       <div className="w-3 h-3 rounded-full bg-green-400/60"></div>
                     </div>
-                    <span className="text-xs text-muted-foreground ml-2">TRM Dashboard</span>
+                    <span className="text-xs text-muted-foreground ml-2">RootKnow Dashboard</span>
                   </div>
                   <div className="p-6 space-y-4">
                     <div className="h-8 bg-muted rounded w-1/2"></div>
@@ -102,10 +102,10 @@ const Index = () => {
               </ul>
             </div>
             
-            {/* TRM */}
+            {/* RootKnow */}
             <div className="bg-card rounded-xl p-8 border border-primary">
               <h3 className="text-xl font-semibold text-foreground mb-4 flex items-center gap-2">
-                <span className="text-primary">✓</span> TRM
+                <span className="text-primary">✓</span> RootKnow
               </h3>
               <ul className="space-y-3 text-muted-foreground">
                 <li>• 95% complete, you customize the 5%</li>
@@ -137,10 +137,10 @@ const Index = () => {
                 <Zap className="w-6 h-6 text-primary" />
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-3">
-                GoRules Business Logic
+                AI-Powered Generation
               </h3>
               <p className="text-muted-foreground">
-                External, configurable business rules. Governance, adaptability, and enterprise readiness—not hardcoded logic.
+                Automatically generate database schemas and API endpoints based on industry standards.
               </p>
             </div>
 
@@ -150,10 +150,10 @@ const Index = () => {
                 <Shield className="w-6 h-6 text-primary" />
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-3">
-                Trigger.dev Workflows
+                Built-in Compliance
               </h3>
               <p className="text-muted-foreground">
-                Async workflows, sagas, compensating transactions. Background jobs that actually work in production.
+                Includes role-based access control (RBAC) and audit logs out of the box.
               </p>
             </div>
 
@@ -163,10 +163,10 @@ const Index = () => {
                 <CreditCard className="w-6 h-6 text-primary" />
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-3">
-                Stripe Integration
+                Integrated Payments
               </h3>
               <p className="text-muted-foreground">
-                Payment processing, subscription management, and billing—all built-in and working from day one.
+                Seamless payment integration for subscription management and billing.
               </p>
             </div>
           </div>
@@ -186,28 +186,28 @@ const Index = () => {
             <div className="bg-card rounded-xl p-8 border border-border">
               <h3 className="text-lg font-semibold text-primary mb-3">For Non-Technical Founders</h3>
               <p className="text-muted-foreground">
-                You don't need to hire developers. TRM builds your entire SaaS platform—authentication, payments, dashboards—in hours. 90% cheaper than hiring devs, 300x faster, zero coding required.
+                You don't need to hire developers. RootKnow builds your entire SaaS platform—authentication, payments, dashboards—in hours. 90% cheaper than hiring devs, 300x faster, zero coding required.
               </p>
             </div>
             
             <div className="bg-card rounded-xl p-8 border border-border">
               <h3 className="text-lg font-semibold text-primary mb-3">For Technical Founders</h3>
               <p className="text-muted-foreground">
-                TRM generates production-grade architecture: GoRules for business logic, Trigger.dev for async, Hasura for real-time, 30+ normalized tables. This isn't toy code. This is what senior engineers architect, but automated.
+                RootKnow generates production-grade architecture: external business logic, async workflows, real-time data, 30+ normalized tables. This isn't toy code. This is what senior engineers architect, but automated.
               </p>
             </div>
             
             <div className="bg-card rounded-xl p-8 border border-border">
               <h3 className="text-lg font-semibold text-primary mb-3">For Agencies</h3>
               <p className="text-muted-foreground">
-                Deliver 10x more projects without hiring. TRM generates 95% complete apps. Your team customizes the 5% that makes each client unique. Stop being a "finishing service" for AI tools.
+                Deliver 10x more projects without hiring. RootKnow generates 95% complete apps. Your team customizes the 5% that makes each client unique.
               </p>
             </div>
             
             <div className="bg-card rounded-xl p-8 border border-border">
               <h3 className="text-lg font-semibold text-primary mb-3">For Enterprises</h3>
               <p className="text-muted-foreground">
-                TRM-generated apps meet enterprise standards: external business rules (governance), async workflows (reliability), ACID transactions (safety), audit logs (compliance). Deploy to production day one.
+                RootKnow-generated apps meet enterprise standards: external business rules (governance), async workflows (reliability), ACID transactions (safety), audit logs (compliance). Deploy to production day one.
               </p>
             </div>
           </div>

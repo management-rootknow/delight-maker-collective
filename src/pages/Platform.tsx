@@ -12,7 +12,7 @@ const Platform = () => {
               The 4-Organ Architecture
             </h1>
             <p className="text-lg text-muted-foreground">
-              Speed without architecture is just fast failure. TRM generates both.
+              Speed without architecture is just fast failure. RootKnow generates both.
             </p>
           </div>
 
@@ -24,7 +24,7 @@ const Platform = () => {
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">UI (Skin)</h3>
               <p className="text-sm text-muted-foreground">
-                Beautiful, responsive interfaces with React & Next.js
+                Beautiful, responsive interfaces with modern React
               </p>
             </div>
 
@@ -34,7 +34,7 @@ const Platform = () => {
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">Data (Bones)</h3>
               <p className="text-sm text-muted-foreground">
-                30+ normalized tables with Hasura real-time GraphQL
+                30+ normalized tables with real-time GraphQL
               </p>
             </div>
 
@@ -44,7 +44,7 @@ const Platform = () => {
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">Brain (Logic)</h3>
               <p className="text-sm text-muted-foreground">
-                GoRules for external, configurable business rules
+                External, configurable business rules engine
               </p>
             </div>
 
@@ -54,7 +54,7 @@ const Platform = () => {
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">Nerves (Async)</h3>
               <p className="text-sm text-muted-foreground">
-                Trigger.dev for workflows, sagas & background jobs
+                Workflows, sagas & background jobs
               </p>
             </div>
           </div>
@@ -93,7 +93,7 @@ const Platform = () => {
                 2
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-3">
-                TRM Generates 95%
+                RootKnow Generates 95%
               </h3>
               <p className="text-muted-foreground">
                 Full architecture: auth, payments, admin, workflows—production-ready in hours.
@@ -133,7 +133,7 @@ const Platform = () => {
               { icon: Shield, title: "Authentication", desc: "Email, social login, password reset—all working" },
               { icon: Database, title: "Database Schema", desc: "30+ normalized tables, migrations included" },
               { icon: Settings, title: "Admin Dashboard", desc: "User management, analytics, reports" },
-              { icon: Zap, title: "Payment Processing", desc: "Stripe integration, subscriptions, webhooks" },
+              { icon: Zap, title: "Payment Processing", desc: "Payment integration, subscriptions, webhooks" },
               { icon: Cloud, title: "Background Jobs", desc: "Emails, notifications, async processing" },
               { icon: CheckCircle, title: "Deployment Ready", desc: "Docker, CI/CD, environment configs" },
             ].map((item, index) => (
@@ -157,7 +157,7 @@ const Platform = () => {
               Production-First DNA
             </h2>
             <p className="text-lg text-muted-foreground">
-              Competitors generate "working demos." TRM generates "production systems."
+              RootKnow generates production systems, not demos.
             </p>
           </div>
 
@@ -167,9 +167,9 @@ const Platform = () => {
               "Retry logic with exponential backoff",
               "Circuit breakers for external services",
               "Health checks & readiness probes",
-              "Observability (Sentry, Datadog ready)",
+              "Observability & monitoring ready",
               "ACID transactions & data integrity",
-              "Input validation (Zod schemas)",
+              "Input validation schemas",
               "SQL injection & XSS protection",
               "CSRF tokens & rate limiting",
               "Audit logs for compliance",
