@@ -224,8 +224,8 @@ const Platform = () => {
 
           {/* Three Steps */}
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">How It Works</h2>
-            <p className="text-muted-foreground">From idea to production in three simple steps.</p>
+            <h2 className="text-3xl font-bold text-foreground mb-4">Three Steps to Your Custom SaaS</h2>
+            <p className="text-muted-foreground">Our process is simple: define, build, deploy.</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 relative max-w-4xl mx-auto">
@@ -238,9 +238,9 @@ const Platform = () => {
             </div>
 
             {[
-              { num: 1, title: "Describe Your App", desc: "Tell us your SaaS idea. We already understand your industry." },
-              { num: 2, title: "RootKnow Generates 95%", desc: "Full architecture: auth, payments, admin, workflows—ready in hours." },
-              { num: 3, title: "Customize the 5%", desc: "Add your unique differentiators. Deploy immediately with real users." },
+              { num: 1, title: "Define Your Logic", desc: "Just enter your job and the idea you want to solve. That's it." },
+              { num: 2, title: "Our Engine Builds", desc: "RootKnow's R-Engine™ instantly compiles your logic into a fully functional SaaS application (database, API, UI)." },
+              { num: 3, title: "Deploy & Monetize", desc: "Launch your tool internally or sell it to others. RootKnow handles hosting, compliance, and scaling." },
             ].map((step, index) => (
               <div 
                 key={index} 

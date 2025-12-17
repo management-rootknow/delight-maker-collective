@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="flex flex-col items-center gap-6 text-center">
           {/* Company Name */}
           <div className="space-y-1">
-            <p className="text-lg font-semibold text-foreground">
+            <p className="text-xl font-bold text-primary">
               RootKnow Global Inc.
             </p>
             <p className="text-sm text-muted-foreground">
