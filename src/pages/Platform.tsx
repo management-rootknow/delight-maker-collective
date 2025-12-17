@@ -22,7 +22,7 @@ const Platform = () => {
               <span className="text-foreground">That Make The Difference</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              Combining <span className="text-primary font-semibold">Career Ontology</span> + <span className="text-purple-500 font-semibold">Engeni AI</span> = 
+              Combining <span className="text-primary font-semibold">Career Ontology<sup className="text-xs">™</sup></span> + <span className="text-purple-500 font-semibold">Engeni<sup className="text-xs">™</sup></span> = 
               <br className="hidden md:block" />
               <span className="gradient-text font-bold"> Professional Apps in Seconds</span>
             </p>
@@ -40,7 +40,7 @@ const Platform = () => {
                 <div className="w-16 h-16 bg-gradient-to-br from-primary to-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg">
                   <Users className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-foreground mb-4">Career Ontology</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-4">Career Ontology<sup className="text-sm">™</sup></h3>
                 <p className="text-lg text-primary font-semibold mb-3">Professional Knowledge Graph</p>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-3">
@@ -70,7 +70,7 @@ const Platform = () => {
                 <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg">
                   <Brain className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-foreground mb-4">Engeni AI Engine</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-4">Engeni<sup className="text-sm">™</sup> AI Engine</h3>
                 <p className="text-lg text-purple-500 font-semibold mb-3">Intelligent Code Generation</p>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-3">
