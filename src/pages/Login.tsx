@@ -22,10 +22,10 @@ const Login = () => {
             {/* Logo */}
             <div className="text-center mb-8">
               <Link to="/" className="text-2xl font-bold text-foreground">
-                RootKnow
+                TRM
               </Link>
               <h1 className="text-lg font-semibold text-foreground mt-4">
-                Sign in to RootKnow Workspace
+                Sign in to TRM Workspace
               </h1>
             </div>
 
