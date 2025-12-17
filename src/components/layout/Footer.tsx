@@ -20,12 +20,12 @@ const Footer = () => {
               Terms of Service
             </Link>
             <span className="text-muted-foreground">|</span>
-            <a href="mailto:support@rootknow.com" className="text-primary hover:underline">
+            <a href="mailto:management@rootknow.com" className="text-primary hover:underline">
               Contact Us
             </a>
           </div>
           <p className="text-xs text-muted-foreground">
-            support@rootknow.com
+            management@rootknow.com
           </p>
         </div>
       </div>

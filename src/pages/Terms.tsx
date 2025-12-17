@@ -100,8 +100,8 @@ const Terms = () => {
               <h2 className="text-xl font-semibold text-foreground mb-4">10. Contact Us</h2>
               <p className="text-muted-foreground leading-relaxed">
                 If you have any questions about these Terms of Service, please contact us at:{" "}
-                <a href="mailto:support@rootknow.com" className="text-primary hover:underline">
-                  support@rootknow.com
+                <a href="mailto:management@rootknow.com" className="text-primary hover:underline">
+                  management@rootknow.com
                 </a>
               </p>
             </section>
