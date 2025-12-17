@@ -1,15 +1,25 @@
 import Layout from "@/components/layout/Layout";
-import { User, Target, Zap, Lightbulb } from "lucide-react";
+import { User, Target, Zap, Lightbulb, Heart, Code, Globe } from "lucide-react";
 
 const About = () => {
   return (
     <Layout>
-      {/* Mission Section */}
-      <section className="py-16 lg:py-24 bg-background">
-        <div className="container max-w-4xl">
-          <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              About RootKnow
+      {/* Hero Section */}
+      <section className="py-16 lg:py-24 bg-background relative overflow-hidden">
+        {/* Background Effects */}
+        <div className="absolute inset-0 mesh-gradient opacity-30" />
+        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl" />
+        
+        <div className="container max-w-4xl relative z-10">
+          <div className="text-center mb-16 animate-fade-in">
+            <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6">
+              About Us
+            </span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+              <span className="gradient-text">About</span>
+              <br />
+              <span className="text-foreground">RootKnow</span>
             </h1>
             <p className="text-xl text-muted-foreground">
               The Instant Software Engine for Professionals.
@@ -17,20 +27,24 @@ const About = () => {
           </div>
 
           {/* Mission */}
-          <div className="bg-card rounded-xl p-8 lg:p-12 border border-primary mb-8">
-            <h2 className="text-2xl font-bold text-foreground mb-4 flex items-center gap-2">
-              <Target className="w-6 h-6 text-primary" />
+          <div className="glow-card rounded-xl p-8 lg:p-12 mb-8 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
+            <h2 className="text-2xl font-bold text-foreground mb-4 flex items-center gap-3">
+              <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+                <Target className="w-5 h-5 text-primary-foreground" />
+              </div>
               Our Mission
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              RootKnow allows businesses to generate <span className="text-primary font-semibold">production-ready</span> internal tools and workflows in minutes. Powered by our proprietary Professional Knowledge Graph, we deliver 95% complete applications with authentication, payments, business logic, admin dashboard, and deployment—in 2-4 hours, without requiring any manual coding.
+              RootKnow allows businesses to generate <span className="gradient-text font-semibold">production-ready</span> internal tools and workflows in minutes. Powered by our proprietary Professional Knowledge Graph, we deliver 95% complete applications with authentication, payments, business logic, admin dashboard, and deployment—in 2-4 hours, without requiring any manual coding.
             </p>
           </div>
 
           {/* Vision */}
-          <div className="bg-card rounded-xl p-8 lg:p-12 border border-border mb-8">
-            <h2 className="text-2xl font-bold text-foreground mb-4 flex items-center gap-2">
-              <Lightbulb className="w-6 h-6 text-primary" />
+          <div className="glow-card rounded-xl p-8 lg:p-12 mb-8 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+            <h2 className="text-2xl font-bold text-foreground mb-4 flex items-center gap-3">
+              <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+                <Lightbulb className="w-5 h-5 text-primary-foreground" />
+              </div>
               Our Vision
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
@@ -39,44 +53,48 @@ const About = () => {
           </div>
 
           {/* What We Do */}
-          <div className="bg-card rounded-xl p-8 lg:p-12 border border-border mb-16">
-            <h2 className="text-2xl font-bold text-foreground mb-4 flex items-center gap-2">
-              <Zap className="w-6 h-6 text-primary" />
+          <div className="glow-card rounded-xl p-8 lg:p-12 mb-16 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+            <h2 className="text-2xl font-bold text-foreground mb-6 flex items-center gap-3">
+              <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+                <Zap className="w-5 h-5 text-primary-foreground" />
+              </div>
               What We Do
             </h2>
-            <ul className="space-y-4 text-muted-foreground">
-              <li className="flex items-start gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span>Generate complete, production-ready applications from business requirements</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span>Include all essential features: authentication, payments, admin dashboards, workflows</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span>Deliver enterprise-grade architecture with security, compliance, and scalability</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span>Provide full code ownership—you own 100% of what we generate</span>
-              </li>
-            </ul>
+            <div className="grid md:grid-cols-2 gap-4">
+              {[
+                { icon: Code, text: "Generate complete, production-ready applications from business requirements" },
+                { icon: Globe, text: "Include all essential features: authentication, payments, admin dashboards, workflows" },
+                { icon: Zap, text: "Deliver enterprise-grade architecture with security, compliance, and scalability" },
+                { icon: Heart, text: "Provide full code ownership—you own 100% of what we generate" },
+              ].map((item, index) => (
+                <div key={index} className="flex items-start gap-3 p-4 bg-muted/30 rounded-lg">
+                  <div className="w-8 h-8 bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <item.icon className="w-4 h-4 text-primary" />
+                  </div>
+                  <span className="text-muted-foreground">{item.text}</span>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* Leadership Section */}
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground">Meet Our Founder</h2>
+          <div className="text-center mb-12 animate-fade-in">
+            <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6">
+              Leadership
+            </span>
+            <h2 className="text-3xl font-bold text-foreground">
+              Meet Our <span className="gradient-text">Founder</span>
+            </h2>
           </div>
 
-          <div className="bg-card rounded-xl p-8 border border-border max-w-md mx-auto">
+          <div className="glow-card rounded-xl p-8 lg:p-10 max-w-lg mx-auto animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
             <div className="flex flex-col items-center text-center">
-              <div className="w-32 h-32 bg-muted rounded-full flex items-center justify-center mb-6">
-                <User className="w-16 h-16 text-muted-foreground" />
+              <div className="w-32 h-32 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full flex items-center justify-center mb-6 ring-4 ring-primary/20">
+                <User className="w-16 h-16 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-1">Ba Tuan Nguyen</h3>
-              <p className="text-primary font-medium mb-4">Founder & CEO</p>
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <h3 className="text-2xl font-bold text-foreground mb-1">Ba Tuan Nguyen</h3>
+              <p className="gradient-text font-semibold mb-4">Founder & CEO</p>
+              <p className="text-muted-foreground leading-relaxed">
                 Researcher and Entrepreneur with extensive experience in career development, sociology, 
                 and AI applications in professional contexts. Founded RootKnow to bridge the gap between 
                 business ideas and production-ready software—empowering professionals across industries 
