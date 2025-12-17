@@ -2,37 +2,39 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/80 backdrop-blur-xl supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="text-xl font-bold text-foreground">
-          RootKnow
+        <Link to="/" className="flex items-center gap-2 group">
+          <img src={logo} alt="RootKnow" className="h-8 w-8 transition-transform group-hover:scale-110" />
+          <span className="text-xl font-bold text-foreground">RootKnow</span>
         </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
-          <Link to="/platform" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+          <Link to="/platform" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full">
             Platform
           </Link>
-          <Link to="/pricing" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+          <Link to="/pricing" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full">
             Pricing
           </Link>
-          <Link to="/about" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+          <Link to="/about" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full">
             About
           </Link>
         </nav>
 
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center gap-3">
-          <Button variant="ghost" asChild>
+          <Button variant="ghost" asChild className="hover:bg-primary/10">
             <Link to="/app">Login</Link>
           </Button>
-          <Button asChild>
+          <Button asChild className="glow-primary">
             <Link to="/app">Start Building</Link>
           </Button>
         </div>
@@ -48,25 +50,25 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-t border-border bg-background">
+        <div className="md:hidden border-t border-border bg-background/95 backdrop-blur-xl animate-fade-in">
           <nav className="container py-4 flex flex-col gap-4">
             <Link 
               to="/platform" 
-              className="text-sm font-medium text-muted-foreground hover:text-foreground"
+              className="text-sm font-medium text-muted-foreground hover:text-primary"
               onClick={() => setMobileMenuOpen(false)}
             >
               Platform
             </Link>
             <Link 
               to="/pricing" 
-              className="text-sm font-medium text-muted-foreground hover:text-foreground"
+              className="text-sm font-medium text-muted-foreground hover:text-primary"
               onClick={() => setMobileMenuOpen(false)}
             >
               Pricing
             </Link>
             <Link 
               to="/about" 
-              className="text-sm font-medium text-muted-foreground hover:text-foreground"
+              className="text-sm font-medium text-muted-foreground hover:text-primary"
               onClick={() => setMobileMenuOpen(false)}
             >
               About
