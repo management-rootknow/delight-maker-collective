@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container">
         <div className="flex flex-col items-center gap-4 text-center">
           <p className="text-sm">
-            © 2025 RootKnow Global Inc. All rights reserved.
+            © 2025 TRM (RootKnow Global Inc.) All rights reserved.
           </p>
           <p className="text-sm text-muted-foreground">
             8 The Green, Ste R, Dover, DE 19901
@@ -20,12 +20,12 @@ const Footer = () => {
               Terms of Service
             </Link>
             <span className="text-muted-foreground">|</span>
-            <a href="mailto:support@rootknow.com" className="text-primary hover:underline">
+            <a href="mailto:support@trm.dev" className="text-primary hover:underline">
               Contact Us
             </a>
           </div>
           <p className="text-xs text-muted-foreground">
-            support@rootknow.com
+            support@trm.dev
           </p>
         </div>
       </div>

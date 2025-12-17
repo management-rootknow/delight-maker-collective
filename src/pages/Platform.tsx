@@ -1,5 +1,5 @@
 import Layout from "@/components/layout/Layout";
-import { ArrowRight, Cpu, Settings, Database, Shield, Cloud } from "lucide-react";
+import { ArrowRight, Brain, Database, Cpu, Zap, Shield, Settings, Cloud, CheckCircle } from "lucide-react";
 
 const Platform = () => {
   return (
@@ -9,15 +9,63 @@ const Platform = () => {
         <div className="container">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              How RootKnow Works
+              The 4-Organ Architecture
             </h1>
             <p className="text-lg text-muted-foreground">
-              From idea to production in three simple steps.
+              Speed without architecture is just fast failure. TRM generates both.
             </p>
           </div>
 
+          {/* 4-Organ System */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+            <div className="bg-card rounded-xl p-6 border border-border text-center">
+              <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Cpu className="w-7 h-7 text-primary" />
+              </div>
+              <h3 className="text-lg font-semibold text-foreground mb-2">UI (Skin)</h3>
+              <p className="text-sm text-muted-foreground">
+                Beautiful, responsive interfaces with React & Next.js
+              </p>
+            </div>
+
+            <div className="bg-card rounded-xl p-6 border border-border text-center">
+              <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Database className="w-7 h-7 text-primary" />
+              </div>
+              <h3 className="text-lg font-semibold text-foreground mb-2">Data (Bones)</h3>
+              <p className="text-sm text-muted-foreground">
+                30+ normalized tables with Hasura real-time GraphQL
+              </p>
+            </div>
+
+            <div className="bg-card rounded-xl p-6 border border-border text-center">
+              <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Brain className="w-7 h-7 text-primary" />
+              </div>
+              <h3 className="text-lg font-semibold text-foreground mb-2">Brain (Logic)</h3>
+              <p className="text-sm text-muted-foreground">
+                GoRules for external, configurable business rules
+              </p>
+            </div>
+
+            <div className="bg-card rounded-xl p-6 border border-border text-center">
+              <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Zap className="w-7 h-7 text-primary" />
+              </div>
+              <h3 className="text-lg font-semibold text-foreground mb-2">Nerves (Async)</h3>
+              <p className="text-sm text-muted-foreground">
+                Trigger.dev for workflows, sagas & background jobs
+              </p>
+            </div>
+          </div>
+
           {/* Three Steps */}
-          <div className="grid md:grid-cols-3 gap-8 relative">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-foreground mb-4">How It Works</h2>
+            <p className="text-muted-foreground">From idea to production in three simple steps.</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 relative max-w-4xl mx-auto">
             {/* Arrows (desktop only) */}
             <div className="hidden md:flex absolute top-1/2 left-1/3 -translate-y-1/2 -translate-x-1/2">
               <ArrowRight className="w-8 h-8 text-primary" />
@@ -32,10 +80,10 @@ const Platform = () => {
                 1
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-3">
-                Define Intent
+                Define Your App
               </h3>
               <p className="text-muted-foreground">
-                Select your industry (e.g., Logistics, HR, Finance) from our library.
+                Describe your SaaS idea. E-commerce, marketplace, or custom workflow.
               </p>
             </div>
 
@@ -45,10 +93,10 @@ const Platform = () => {
                 2
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-3">
-                Engine Processing
+                TRM Generates 95%
               </h3>
               <p className="text-muted-foreground">
-                Our engine maps your requirements against thousands of professional workflows.
+                Full architecture: auth, payments, admin, workflows—production-ready in hours.
               </p>
             </div>
 
@@ -58,68 +106,79 @@ const Platform = () => {
                 3
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-3">
-                Deploy
+                Customize the 5%
               </h3>
               <p className="text-muted-foreground">
-                Launch a fully hosted web application instantly.
+                Add your unique differentiators. Deploy immediately with real users.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Tech Stack Section */}
+      {/* What's Included */}
       <section className="py-16 lg:py-24 bg-muted/30">
         <div className="container">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              The Tech Stack
+              What You Get (95% Complete)
             </h2>
             <p className="text-lg text-muted-foreground">
-              Enterprise-grade technology powering your applications.
+              Everything you need to launch. No homework required.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div className="flex items-start gap-4 bg-card p-6 rounded-lg border border-border">
-              <Cpu className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-              <div>
-                <h4 className="font-semibold text-foreground mb-1">Workflow Engine</h4>
-                <p className="text-sm text-muted-foreground">Powered by Trigger.dev patterns.</p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {[
+              { icon: Shield, title: "Authentication", desc: "Email, social login, password reset—all working" },
+              { icon: Database, title: "Database Schema", desc: "30+ normalized tables, migrations included" },
+              { icon: Settings, title: "Admin Dashboard", desc: "User management, analytics, reports" },
+              { icon: Zap, title: "Payment Processing", desc: "Stripe integration, subscriptions, webhooks" },
+              { icon: Cloud, title: "Background Jobs", desc: "Emails, notifications, async processing" },
+              { icon: CheckCircle, title: "Deployment Ready", desc: "Docker, CI/CD, environment configs" },
+            ].map((item, index) => (
+              <div key={index} className="flex items-start gap-4 bg-card p-6 rounded-lg border border-border">
+                <item.icon className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                <div>
+                  <h4 className="font-semibold text-foreground mb-1">{item.title}</h4>
+                  <p className="text-sm text-muted-foreground">{item.desc}</p>
+                </div>
               </div>
-            </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-            <div className="flex items-start gap-4 bg-card p-6 rounded-lg border border-border">
-              <Settings className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-              <div>
-                <h4 className="font-semibold text-foreground mb-1">Business Rules</h4>
-                <p className="text-sm text-muted-foreground">Configurable logic via GoRules.</p>
-              </div>
-            </div>
+      {/* Production-First DNA */}
+      <section className="py-16 lg:py-24 bg-background">
+        <div className="container max-w-4xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Production-First DNA
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Competitors generate "working demos." TRM generates "production systems."
+            </p>
+          </div>
 
-            <div className="flex items-start gap-4 bg-card p-6 rounded-lg border border-border">
-              <Cloud className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-              <div>
-                <h4 className="font-semibold text-foreground mb-1">Infrastructure</h4>
-                <p className="text-sm text-muted-foreground">Hosted on AWS / Vercel.</p>
+          <div className="grid md:grid-cols-2 gap-4">
+            {[
+              "Error boundaries & graceful fallbacks",
+              "Retry logic with exponential backoff",
+              "Circuit breakers for external services",
+              "Health checks & readiness probes",
+              "Observability (Sentry, Datadog ready)",
+              "ACID transactions & data integrity",
+              "Input validation (Zod schemas)",
+              "SQL injection & XSS protection",
+              "CSRF tokens & rate limiting",
+              "Audit logs for compliance",
+            ].map((item, index) => (
+              <div key={index} className="flex items-center gap-3 p-3 bg-card rounded-lg border border-border">
+                <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
+                <span className="text-foreground">{item}</span>
               </div>
-            </div>
-
-            <div className="flex items-start gap-4 bg-card p-6 rounded-lg border border-border">
-              <Database className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-              <div>
-                <h4 className="font-semibold text-foreground mb-1">Database</h4>
-                <p className="text-sm text-muted-foreground">Secure, encrypted storage.</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4 bg-card p-6 rounded-lg border border-border">
-              <Shield className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-              <div>
-                <h4 className="font-semibold text-foreground mb-1">Security</h4>
-                <p className="text-sm text-muted-foreground">Enterprise-grade encryption (AES-256).</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>

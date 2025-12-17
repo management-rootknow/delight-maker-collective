@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Check } from "lucide-react";
+import { Check, X } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import {
   Accordion,
@@ -15,56 +15,80 @@ const Pricing = () => {
       name: "STARTER",
       price: "$0",
       billing: "per month",
-      subtext: "Free forever",
-      features: ["1 Project", "Basic Ontology Access", "Community Support"],
+      subtext: "Try it free",
+      features: ["1 Project", "Basic Templates", "Community Support", "Public Deployment"],
       cta: "Get Started",
       highlighted: false,
     },
     {
       name: "PROFESSIONAL",
-      price: "$49",
-      billing: "per month",
-      subtext: "Billed monthly",
+      price: "$800",
+      billing: "one-time",
+      subtext: "Per project, not per month",
       features: [
-        "Unlimited Projects",
-        "Full Ontology Access",
-        "Custom Domain",
-        "Priority Email Support",
-        "Monthly billing via Stripe",
+        "95% Complete App",
+        "Full Tech Stack",
+        "Authentication & Payments",
+        "Admin Dashboard",
+        "Background Jobs",
+        "Priority Support",
+        "You Own the Code",
       ],
-      cta: "Get Started",
+      cta: "Start Building",
       highlighted: true,
-      badge: "Most Popular",
+      badge: "Best Value",
     },
     {
       name: "ENTERPRISE",
       price: "Contact",
       billing: "Sales",
-      subtext: "For large organizations",
+      subtext: "Custom solutions",
       features: [
-        "Unlimited Everything",
+        "Unlimited Projects",
         "Custom Ontology Mapping",
-        "SLA Support (99.9% uptime)",
-        "On-premise deployment",
-        "Dedicated account manager",
+        "On-premise Deployment",
+        "SLA Support (99.9%)",
+        "Dedicated Account Manager",
+        "Custom Integrations",
       ],
       cta: "Contact Sales",
       highlighted: false,
     },
   ];
 
+  const comparison = [
+    { feature: "Completeness", trm: "95%", others: "60%" },
+    { feature: "Time to Deploy", trm: "2-4 hours", others: "1-2 weeks" },
+    { feature: "Pricing Model", trm: "Fixed, one-time", others: "Credit burnout" },
+    { feature: "Business Rules", trm: "External (GoRules)", others: "Hardcoded" },
+    { feature: "Async Workflows", trm: "Trigger.dev", others: "Blocking" },
+    { feature: "Code Ownership", trm: "100% yours", others: "Varies" },
+  ];
+
   const faqs = [
     {
-      question: "Can I cancel anytime?",
-      answer: "Yes, subscriptions are billed monthly via Stripe. You can cancel at any time.",
+      question: "Why one-time pricing instead of subscription?",
+      answer: "You pay once, you own the code forever. No credit burnout, no monthly surprises. Traditional development costs $50k+. TRM gives you production-ready code for $800.",
     },
     {
-      question: "Is my data secure?",
-      answer: "Yes, we use industry-standard AES-256 encryption and secure hosting on AWS.",
+      question: "What if TRM goes away?",
+      answer: "You own the generated code. It's your repo. If TRM disappeared tomorrow, you have a working app using standard tech stack (Next.js, PostgreSQL). Any dev can maintain it.",
     },
     {
-      question: "Do you offer discounts for annual billing?",
-      answer: "Contact our sales team for custom pricing and annual plans.",
+      question: "Can TRM integrate with [specific service]?",
+      answer: "If it has an API, yes. TRM generates standard code—add any API call you need. Common integrations (Stripe, email, analytics) are built-in.",
+    },
+    {
+      question: "My industry is unique, this won't work",
+      answer: "Most apps are: users, content, transactions, permissions. The business logic is unique—that's why TRM uses GoRules for external configuration.",
+    },
+    {
+      question: "How secure is TRM-generated code?",
+      answer: "Multi-layer security: input validation (Zod), SQL injection prevention, XSS protection, CSRF tokens, rate limiting. You own the code—run your own security audit.",
+    },
+    {
+      question: "What's the catch?",
+      answer: "No catch. The economics are different: Traditional = 1 app per 3 months. TRM = 1 app per 4 hours. We trade time for volume—more apps at accessible pricing.",
     },
   ];
 
@@ -75,14 +99,14 @@ const Pricing = () => {
         <div className="container">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Simple Subscription Pricing
+              Fixed Pricing. No Credit Burnout.
             </h1>
             <p className="text-lg text-muted-foreground">
-              Choose the plan that works for you.
+              Pay once, own forever. 90% cheaper than hiring developers.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-20">
             {plans.map((plan, index) => (
               <div
                 key={index}
@@ -131,6 +155,33 @@ const Pricing = () => {
                 </Button>
               </div>
             ))}
+          </div>
+
+          {/* Comparison Table */}
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-2xl font-bold text-foreground text-center mb-8">
+              TRM vs Others
+            </h2>
+            <div className="bg-card rounded-xl border border-border overflow-hidden">
+              <div className="grid grid-cols-3 bg-muted/50 p-4 font-semibold text-foreground">
+                <div>Feature</div>
+                <div className="text-center text-primary">TRM</div>
+                <div className="text-center">Others</div>
+              </div>
+              {comparison.map((row, index) => (
+                <div key={index} className="grid grid-cols-3 p-4 border-t border-border">
+                  <div className="text-muted-foreground">{row.feature}</div>
+                  <div className="text-center font-medium text-foreground flex items-center justify-center gap-1">
+                    <Check className="w-4 h-4 text-primary" />
+                    {row.trm}
+                  </div>
+                  <div className="text-center text-muted-foreground flex items-center justify-center gap-1">
+                    <X className="w-4 h-4 text-destructive/60" />
+                    {row.others}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
