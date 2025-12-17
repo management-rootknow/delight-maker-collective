@@ -11,7 +11,7 @@ const Header = () => {
       <div className="container flex h-16 items-center justify-between">
         {/* Logo */}
         <Link to="/" className="text-xl font-bold text-foreground">
-          TRM
+          RootKnow
         </Link>
 
         {/* Desktop Navigation */}

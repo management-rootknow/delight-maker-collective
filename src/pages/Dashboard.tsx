@@ -10,7 +10,7 @@ const Dashboard = () => {
       <header className="border-b border-border bg-card">
         <div className="container flex h-16 items-center justify-between">
           <Link to="/" className="text-xl font-bold text-foreground">
-            TRM
+            RootKnow
           </Link>
           <nav className="flex items-center gap-6">
             <Link 
