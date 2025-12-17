@@ -10,13 +10,13 @@ const Footer = () => {
             <p className="text-xl font-bold text-primary">
               RootKnow Global Inc.
             </p>
-            <p className="text-sm text-foreground/80">
+            <p className="text-sm text-slate-300">
               Delaware C-Corporation • File Number: 10421545
             </p>
           </div>
 
           {/* Address */}
-          <p className="text-sm text-foreground/70">
+          <p className="text-sm text-slate-400">
             8 The Green, Ste R, Dover, DE 19901, USA
           </p>
 
@@ -36,12 +36,12 @@ const Footer = () => {
           </div>
 
           {/* Email */}
-          <p className="text-xs text-muted-foreground">
+          <p className="text-sm text-slate-400">
             management@rootknow.com
           </p>
 
           {/* Copyright */}
-          <p className="text-xs text-muted-foreground border-t border-border pt-6 w-full">
+          <p className="text-xs text-slate-500 border-t border-slate-700 pt-6 w-full">
             © 2025 RootKnow Global Inc. All rights reserved.
           </p>
         </div>
