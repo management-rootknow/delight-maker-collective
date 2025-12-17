@@ -11,9 +11,9 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/80 backdrop-blur-xl supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2 group">
-          <img src={logo} alt="RootKnow" className="h-8 w-8 transition-transform group-hover:scale-110" />
-          <span className="text-xl font-bold text-foreground">RootKnow</span>
+        <Link to="/" className="flex items-center gap-3 group">
+          <img src={logo} alt="RootKnow" className="h-10 w-10 transition-transform group-hover:scale-110 rounded-lg" />
+          <span className="text-xl font-bold gradient-text">RootKnow</span>
         </Link>
 
         {/* Desktop Navigation */}
