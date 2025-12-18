@@ -4,7 +4,7 @@ import { ArrowRight, Brain, Database, Cpu, Zap, Shield, Settings, Cloud, CheckCi
 const Platform = () => {
   return (
     <Layout>
-      {/* Hero - Core IP Power */}
+      {/* Pain Point Hero */}
       <section className="py-16 lg:py-24 bg-background relative overflow-hidden">
         {/* Background Effects */}
         <div className="absolute inset-0 mesh-gradient opacity-30" />
@@ -12,23 +12,76 @@ const Platform = () => {
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl floating" style={{ animationDelay: "1s" }} />
         
         <div className="container relative z-10">
+          {/* Market Opportunity Banner */}
+          <div className="text-center mb-12 animate-fade-in">
+            <div className="inline-flex flex-wrap items-center justify-center gap-4 md:gap-8 px-6 py-4 bg-gradient-to-r from-primary/10 via-purple-500/10 to-primary/10 rounded-2xl border border-primary/20">
+              <div className="text-center">
+                <p className="text-2xl md:text-3xl font-bold gradient-text">100M+</p>
+                <p className="text-xs text-muted-foreground">Potential Users</p>
+              </div>
+              <div className="h-8 w-px bg-border hidden md:block" />
+              <div className="text-center">
+                <p className="text-2xl md:text-3xl font-bold text-purple-500">70M</p>
+                <p className="text-xs text-muted-foreground">Untapped Market</p>
+              </div>
+              <div className="h-8 w-px bg-border hidden md:block" />
+              <div className="text-center">
+                <p className="text-2xl md:text-3xl font-bold text-foreground">$89B</p>
+                <p className="text-xs text-muted-foreground">No-Code Market by 2032</p>
+              </div>
+            </div>
+          </div>
+
           <div className="text-center max-w-4xl mx-auto mb-16 animate-fade-in">
-            <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6 shimmer">
-              Core Power
+            <span className="inline-block px-4 py-2 bg-destructive/10 text-destructive rounded-full text-sm font-medium mb-6">
+              The Real Problem
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              <span className="gradient-text">2 Proprietary IPs</span>
+              <span className="text-foreground">You Know Your Job.</span>
               <br />
-              <span className="text-foreground">That Make The Difference</span>
+              <span className="gradient-text">But Can't Build Software For It.</span>
             </h1>
-            <p className="text-xl text-muted-foreground mb-8">
-              Combining <span className="text-primary font-semibold">Career Ontology<sup className="text-xs">™</sup></span> + <span className="text-purple-500 font-semibold">Engeni<sup className="text-xs">™</sup></span> = 
-              <br className="hidden md:block" />
-              <span className="gradient-text font-bold"> Professional Apps in Seconds</span>
+            <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+              <span className="text-foreground font-semibold">85% of software projects fail.</span> Traditional development costs <span className="text-destructive font-semibold">$10,000 - $200,000</span> and takes <span className="text-destructive font-semibold">4-8 weeks</span>. 
+              Other AI tools only give you <span className="text-muted-foreground">60-70% complete apps</span>—the rest is homework.
             </p>
-            <p className="text-lg text-muted-foreground">
-              Better than any other AI app builder
+            <p className="text-lg text-primary font-semibold">
+              You have the expertise. We have the engine. Let's build.
             </p>
+          </div>
+
+          {/* Pain Points Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-20">
+            {[
+              { icon: Users, stat: "70M", label: "Professionals Left Behind", desc: "Have expertise but no tech skills to build software" },
+              { icon: Zap, stat: "$50K+", label: "Can't Afford Developers", desc: "Traditional development is out of reach for most" },
+              { icon: Shield, stat: "85%", label: "Projects Fail", desc: "Most software projects never see completion" },
+              { icon: Rocket, stat: "8 Weeks", label: "Too Long to Wait", desc: "By the time it's done, the opportunity is gone" },
+            ].map((item, index) => (
+              <div 
+                key={index}
+                className="glow-card rounded-xl p-6 text-center group hover:scale-105 transition-all duration-300 animate-fade-in-up"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="w-12 h-12 bg-destructive/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <item.icon className="w-6 h-6 text-destructive" />
+                </div>
+                <p className="text-2xl font-bold text-destructive mb-1">{item.stat}</p>
+                <p className="text-sm font-semibold text-foreground mb-2">{item.label}</p>
+                <p className="text-xs text-muted-foreground">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Solution - Core IPs */}
+          <div className="text-center mb-12">
+            <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6 shimmer">
+              The Solution
+            </span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+              <span className="gradient-text">2 Proprietary IPs</span>
+              <span className="text-foreground"> That Change Everything</span>
+            </h2>
           </div>
 
           {/* 2 Core IPs */}
@@ -41,23 +94,23 @@ const Platform = () => {
                   <Users className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-foreground mb-4">Career Ontology<sup className="text-sm">™</sup></h3>
-                <p className="text-lg text-primary font-semibold mb-3">We Know Your Industry</p>
+                <p className="text-lg text-primary font-semibold mb-3">We Already Know Your Industry</p>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Already knows how your job works</span>
+                    <span>Understands finance, logistics, healthcare, real estate...</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Understands real problems you face daily</span>
+                    <span>Knows the workflows, pain points, and solutions</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Built from thousands of real use cases</span>
+                    <span>Built from thousands of real professional use cases</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Researched from real professional needs</span>
+                    <span>No explaining needed—we speak your language</span>
                   </li>
                 </ul>
               </div>
@@ -71,23 +124,23 @@ const Platform = () => {
                   <Brain className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-foreground mb-4">Engeni<sup className="text-sm">™</sup> AI Engine</h3>
-                <p className="text-lg text-purple-500 font-semibold mb-3">Smart App Builder</p>
+                <p className="text-lg text-purple-500 font-semibold mb-3">95% Complete Apps, Not Demos</p>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-purple-500 flex-shrink-0 mt-0.5" />
-                    <span>Creates working apps, not just demos</span>
+                    <span>Creates working apps with 20-30+ database tables</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-purple-500 flex-shrink-0 mt-0.5" />
-                    <span>Builds complete app structure automatically</span>
+                    <span>Built-in payments, auth, admin dashboards</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-purple-500 flex-shrink-0 mt-0.5" />
-                    <span>Learns from thousands of successful projects</span>
+                    <span>Real-time updates, background tasks, everything</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-purple-500 flex-shrink-0 mt-0.5" />
-                    <span>Fast and secure from day one</span>
+                    <span>Production-ready from day one</span>
                   </li>
                 </ul>
               </div>
@@ -113,41 +166,68 @@ const Platform = () => {
             </p>
           </div>
 
-          {/* Why Better Than Vibe Coding */}
-          <div className="glow-card rounded-2xl p-8 md:p-12 max-w-5xl mx-auto mb-20 relative overflow-hidden">
+          {/* Comparison Stats */}
+          <div className="glow-card rounded-2xl p-8 md:p-12 max-w-6xl mx-auto mb-20 relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-purple-500/5" />
             <div className="relative z-10">
               <div className="text-center mb-10">
-                <span className="inline-block px-4 py-2 bg-purple-500/10 text-purple-500 rounded-full text-sm font-medium mb-4">
-                  Real Comparison
+                <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
+                  The Numbers Don't Lie
                 </span>
                 <h3 className="text-2xl md:text-3xl font-bold text-foreground">
-                  Why We're <span className="gradient-text">Better?</span>
+                  RootKnow vs <span className="text-muted-foreground">Everyone Else</span>
                 </h3>
               </div>
               
-              <div className="grid md:grid-cols-2 gap-6">
+              {/* Stats Comparison Table */}
+              <div className="grid md:grid-cols-3 gap-6 mb-10">
+                <div className="text-center p-6 rounded-xl bg-muted/50">
+                  <p className="text-sm text-muted-foreground mb-2">Time to Launch</p>
+                  <p className="text-3xl font-bold gradient-text mb-1">2-4 Hours</p>
+                  <p className="text-xs text-muted-foreground">vs 4-8 weeks traditional</p>
+                  <p className="text-xs text-primary font-semibold mt-2">300x Faster</p>
+                </div>
+                <div className="text-center p-6 rounded-xl bg-muted/50">
+                  <p className="text-sm text-muted-foreground mb-2">Production Ready</p>
+                  <p className="text-3xl font-bold gradient-text mb-1">95-98%</p>
+                  <p className="text-xs text-muted-foreground">vs 60-70% competitors</p>
+                  <p className="text-xs text-primary font-semibold mt-2">No Homework</p>
+                </div>
+                <div className="text-center p-6 rounded-xl bg-muted/50">
+                  <p className="text-sm text-muted-foreground mb-2">Success Rate</p>
+                  <p className="text-3xl font-bold gradient-text mb-1">90%</p>
+                  <p className="text-xs text-muted-foreground">vs 15% traditional</p>
+                  <p className="text-xs text-primary font-semibold mt-2">6x Higher</p>
+                </div>
+              </div>
+
+              {/* Detailed Comparison */}
+              <div className="grid md:grid-cols-2 gap-8">
                 <div className="space-y-4">
-                  <h4 className="text-lg font-semibold text-muted-foreground flex items-center gap-2">
-                    <span className="w-8 h-8 bg-muted rounded-full flex items-center justify-center text-sm">❌</span>
-                    Other AI Tools
+                  <h4 className="text-lg font-semibold text-destructive flex items-center gap-2">
+                    <span className="w-8 h-8 bg-destructive/10 rounded-full flex items-center justify-center text-sm">❌</span>
+                    Other AI App Builders
                   </h4>
-                  <ul className="space-y-3 text-muted-foreground">
+                  <ul className="space-y-3 text-muted-foreground text-sm">
                     <li className="flex items-start gap-3">
                       <span className="text-destructive">•</span>
-                      <span>Generic apps—doesn't know your job</span>
+                      <span>60-70% complete—you finish the rest yourself</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-destructive">•</span>
-                      <span>You have to explain everything yourself</span>
+                      <span>No payments, no auth, no admin dashboard</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-destructive">•</span>
-                      <span>Demo-only, needs lots of fixing</span>
+                      <span>Credit burns fast ($25-100/month consumed quickly)</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-destructive">•</span>
-                      <span>Missing industry best practices</span>
+                      <span>Generic apps that don't understand your industry</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-destructive">•</span>
+                      <span>Complex apps require significant manual work</span>
                     </li>
                   </ul>
                 </div>
@@ -157,22 +237,26 @@ const Platform = () => {
                     <span className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center text-sm">✓</span>
                     RootKnow
                   </h4>
-                  <ul className="space-y-3 text-foreground">
+                  <ul className="space-y-3 text-foreground text-sm">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span><strong>Already knows</strong> how your job works</span>
+                      <span><strong>95-98% complete</strong>—just customize 5%</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span><strong>Auto-adds</strong> common features for your industry</span>
+                      <span><strong>Full stack:</strong> Payments, auth, admin, real-time</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span><strong>Ready to use</strong> from the start</span>
+                      <span><strong>Fixed pricing</strong>—no surprise credit burns</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span><strong>Built with</strong> best practices from real projects</span>
+                      <span><strong>Industry-aware:</strong> We know finance, logistics, healthcare...</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                      <span><strong>20-30+ database tables</strong> with complex relationships</span>
                     </li>
                   </ul>
                 </div>
