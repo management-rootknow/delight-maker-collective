@@ -29,26 +29,26 @@ const About = () => {
           {/* Mission */}
           <div className="glow-card rounded-xl p-8 lg:p-12 mb-8 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
             <h2 className="text-2xl font-bold text-foreground mb-4 flex items-center gap-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-                <Target className="w-5 h-5 text-primary-foreground" />
+              <div className="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+                <Target className="w-4 h-4 text-primary-foreground" />
               </div>
               Our Mission
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              RootKnow helps businesses create <span className="gradient-text font-semibold">ready-to-use</span> apps and tools in minutes. Our AI understands your industry, so you get 95% complete apps with login, payments, dashboard, and everything you need—in just 2-4 hours, no coding required.
+              To empower domain experts and enterprises to transform professional knowledge into production-ready software instantly, eliminating the gap between business logic and technical execution.
             </p>
           </div>
 
           {/* Vision */}
           <div className="glow-card rounded-xl p-8 lg:p-12 mb-8 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
             <h2 className="text-2xl font-bold text-foreground mb-4 flex items-center gap-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-                <Lightbulb className="w-5 h-5 text-primary-foreground" />
+              <div className="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+                <Lightbulb className="w-4 h-4 text-primary-foreground" />
               </div>
               Our Vision
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              We believe anyone with a business idea should be able to launch a working app without hiring developers, without learning to code, and without spending months or $50,000. RootKnow makes building software easy for everyone.
+              A future where software creation is driven by industry expertise, not coding constraints. We aim to be the global infrastructure where professional knowledge powers the world's applications.
             </p>
           </div>
 
@@ -95,9 +95,7 @@ const About = () => {
               <h3 className="text-2xl font-bold text-foreground mb-1">Ba Tuan Nguyen</h3>
               <p className="gradient-text font-semibold mb-4">Founder & CEO</p>
               <p className="text-muted-foreground leading-relaxed">
-                Researcher and Entrepreneur with deep experience in career development, people behavior, 
-                and AI for professionals. Founded RootKnow to help people turn their business ideas 
-                into real, working apps—no tech skills needed.
+                Ba Tuan Nguyen founded RootKnow with a core belief: Expertise is the asset; technology shouldn't be the barrier. He built RootKnow to empower professionals—from finance to logistics—to turn their deep industry knowledge into powerful software products instantly. His vision is to let the world's experts build the world's tools, without writing a single line of code.
               </p>
             </div>
           </div>
