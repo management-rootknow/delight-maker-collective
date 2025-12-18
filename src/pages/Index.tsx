@@ -27,7 +27,7 @@ const Index = () => {
                 <span className="gradient-text">Professionals.</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-xl animate-fade-in" style={{ animationDelay: "0.2s" }}>
-                RootKnow generates complete, production-ready applications in hours. Authentication, payments, admin dashboard—all working, all included. Zero coding required.
+                RootKnow builds complete, ready-to-use apps in hours. Login, payments, dashboard—everything works right away. No coding needed.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: "0.3s" }}>
                 <Button size="lg" asChild className="text-base px-8 glow-primary group">
@@ -185,13 +185,13 @@ const Index = () => {
             </div>
             <div className="order-1 lg:order-2 space-y-6 animate-fade-in-right">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-                AI-Powered <span className="gradient-text">Code Generation</span>
+                AI Builds Your <span className="gradient-text">Entire App</span>
               </h2>
               <p className="text-lg text-muted-foreground">
-                Watch as RootKnow transforms your requirements into production-ready code. Complete with authentication, database schemas, API endpoints, and admin dashboards.
+                Watch RootKnow turn your idea into a working app. Login system, database, connections, and dashboard—all included.
               </p>
               <ul className="space-y-4">
-                {["Automatic schema generation", "Built-in security patterns", "Scalable architecture"].map((item, i) => (
+                {["Auto-creates your database", "Security built-in from start", "Grows with your business"].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 text-foreground">
                     <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center">
                       <CheckCircle className="w-4 h-4 text-primary" />
@@ -211,10 +211,10 @@ const Index = () => {
         <div className="container relative">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 animate-fade-in">
-              Production-First Architecture
+              Built to Work, Not Just Look Good
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: "0.1s" }}>
-              Every generated app has: error boundaries, retry logic, circuit breakers, health checks, observability.
+              Every app handles errors gracefully, retries when needed, and keeps running smoothly.
             </p>
           </div>
 
@@ -222,20 +222,20 @@ const Index = () => {
             {[
               {
                 icon: Zap,
-                title: "AI-Powered Generation",
-                description: "Automatically generate database schemas and API endpoints based on industry standards.",
+                title: "Smart Auto-Build",
+                description: "AI automatically creates your database and connects everything based on your industry.",
                 delay: "0.1s"
               },
               {
                 icon: Shield,
-                title: "Built-in Compliance",
-                description: "Includes role-based access control (RBAC) and audit logs out of the box.",
+                title: "Built-in Security",
+                description: "User permissions and activity tracking included from the start.",
                 delay: "0.2s"
               },
               {
                 icon: CreditCard,
-                title: "Integrated Payments",
-                description: "Seamless payment integration for subscription management and billing.",
+                title: "Easy Payments",
+                description: "Accept payments and manage subscriptions with no extra setup.",
                 delay: "0.3s"
               }
             ].map((feature, i) => (
@@ -273,22 +273,22 @@ const Index = () => {
             {[
               {
                 title: "For Non-Technical Founders",
-                description: "You don't need to hire developers. RootKnow builds your entire SaaS platform—authentication, payments, dashboards—in hours. 90% cheaper than hiring devs, 300x faster, zero coding required.",
+                description: "No need to hire developers. RootKnow builds your entire app—login, payments, dashboards—in hours. 90% cheaper, 300x faster, no coding needed.",
                 delay: "0.1s"
               },
               {
                 title: "For Technical Founders",
-                description: "RootKnow generates production-grade architecture: external business logic, async workflows, real-time data, 30+ normalized tables. This isn't toy code. This is what senior engineers architect, but automated.",
+                description: "RootKnow generates professional-level apps: flexible business rules, background tasks, live data sync, and well-organized databases. This is senior-engineer quality, fully automated.",
                 delay: "0.2s"
               },
               {
                 title: "For Agencies",
-                description: "Deliver 10x more projects without hiring. RootKnow generates 95% complete apps. Your team customizes the 5% that makes each client unique.",
+                description: "Deliver 10x more projects without hiring. RootKnow builds 95% of the app. Your team just adds the finishing touches.",
                 delay: "0.3s"
               },
               {
                 title: "For Enterprises",
-                description: "RootKnow-generated apps meet enterprise standards: external business rules (governance), async workflows (reliability), ACID transactions (safety), audit logs (compliance). Deploy to production day one.",
+                description: "Apps that meet business standards: flexible rules, reliable background tasks, safe data handling, and full activity tracking. Ready to launch on day one.",
                 delay: "0.4s"
               }
             ].map((item, i) => (
