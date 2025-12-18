@@ -27,7 +27,7 @@ const Pricing = () => {
     },
     {
       name: "PROFESSIONAL",
-      price: "$49",
+      price: "$99",
       billing: "per month",
       subtext: "For individual experts",
       features: [
@@ -64,7 +64,7 @@ const Pricing = () => {
 
   const comparison = [
     { feature: "Time to Launch", rootknow: "2-4 Hours", others: "4-8 Weeks" },
-    { feature: "Development Cost", rootknow: "$49/mo", others: "$10K-$200K" },
+    { feature: "Development Cost", rootknow: "$99/mo", others: "$10K-$200K" },
     { feature: "App Completeness", rootknow: "95-98%", others: "60% (need more dev)" },
     { feature: "Success Rate", rootknow: "90%", others: "15%" },
     { feature: "Technical Skills Needed", rootknow: "None", others: "Developer Required" },
@@ -77,7 +77,7 @@ const Pricing = () => {
       answer: "Absolutely! RootKnow was built specifically for industry experts like you. If you can explain how your business works, RootKnow builds the app. No coding, no technical jargon—just your expertise.",
     },
     {
-      question: "How is $49/month so cheap compared to hiring developers?",
+      question: "How is $99/month so cheap compared to hiring developers?",
       answer: "Traditional development costs $10,000-$200,000 and takes months. RootKnow uses AI + industry knowledge to generate 95% complete apps in hours. You get enterprise-quality software at a fraction of the cost.",
     },
     {
@@ -94,7 +94,7 @@ const Pricing = () => {
     },
     {
       question: "What's the catch?",
-      answer: "No catch. Traditional dev: 85% failure rate, months of waiting, $50K+ cost. RootKnow: 90% success rate, 2-4 hours, $49/month. We win when you win.",
+      answer: "No catch. Traditional dev: 85% failure rate, months of waiting, $50K+ cost. RootKnow: 90% success rate, 2-4 hours, $99/month. We win when you win.",
     },
   ];
 
