@@ -35,7 +35,7 @@ const About = () => {
               Our Mission
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              RootKnow allows businesses to generate <span className="gradient-text font-semibold">production-ready</span> internal tools and workflows in minutes. Powered by our proprietary Professional Knowledge Graph, we deliver 95% complete applications with authentication, payments, business logic, admin dashboard, and deployment—in 2-4 hours, without requiring any manual coding.
+              RootKnow helps businesses create <span className="gradient-text font-semibold">ready-to-use</span> apps and tools in minutes. Our AI understands your industry, so you get 95% complete apps with login, payments, dashboard, and everything you need—in just 2-4 hours, no coding required.
             </p>
           </div>
 
@@ -48,7 +48,7 @@ const About = () => {
               Our Vision
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              We believe anyone with a business idea should be able to launch a production-ready SaaS platform without hiring developers, without learning to code, and without spending months or $50k. RootKnow democratizes software development for professionals in every industry.
+              We believe anyone with a business idea should be able to launch a working app without hiring developers, without learning to code, and without spending months or $50,000. RootKnow makes building software easy for everyone.
             </p>
           </div>
 
@@ -62,10 +62,10 @@ const About = () => {
             </h2>
             <div className="grid md:grid-cols-2 gap-4">
               {[
-                { icon: Code, text: "Generate complete, production-ready applications from business requirements" },
-                { icon: Globe, text: "Include all essential features: authentication, payments, admin dashboards, workflows" },
-                { icon: Zap, text: "Deliver enterprise-grade architecture with security, compliance, and scalability" },
-                { icon: Heart, text: "Provide full code ownership—you own 100% of what we generate" },
+                { icon: Code, text: "Build complete, working apps from your business idea" },
+                { icon: Globe, text: "Include everything you need: login, payments, dashboard, auto-tasks" },
+                { icon: Zap, text: "Create professional apps that are secure and grow with you" },
+                { icon: Heart, text: "You own 100% of your app—it's completely yours" },
               ].map((item, index) => (
                 <div key={index} className="flex items-start gap-3 p-4 bg-muted/30 rounded-lg">
                   <div className="w-8 h-8 bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -95,10 +95,9 @@ const About = () => {
               <h3 className="text-2xl font-bold text-foreground mb-1">Ba Tuan Nguyen</h3>
               <p className="gradient-text font-semibold mb-4">Founder & CEO</p>
               <p className="text-muted-foreground leading-relaxed">
-                Researcher and Entrepreneur with extensive experience in career development, sociology, 
-                and AI applications in professional contexts. Founded RootKnow to bridge the gap between 
-                business ideas and production-ready software—empowering professionals across industries 
-                to build without barriers.
+                Researcher and Entrepreneur with deep experience in career development, people behavior, 
+                and AI for professionals. Founded RootKnow to help people turn their business ideas 
+                into real, working apps—no tech skills needed.
               </p>
             </div>
           </div>
