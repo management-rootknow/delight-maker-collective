@@ -95,7 +95,7 @@ const About = () => {
               <h3 className="text-2xl font-bold text-foreground mb-1">Ba Tuan Nguyen</h3>
               <p className="gradient-text font-semibold mb-4">Founder & CEO</p>
               <p className="text-muted-foreground leading-relaxed">
-                Ba Tuan Nguyen founded RootKnow with a core belief: Expertise is the asset; technology shouldn't be the barrier. He built RootKnow to empower professionals—from finance to logistics—to turn their deep industry knowledge into powerful software products instantly. His vision is to let the world's experts build the world's tools, without writing a single line of code.
+                Ba Tuan Nguyen believes that if you can explain your job, you can build software for it. He created RootKnow to replace complex coding with professional understanding. Now, your industry knowledge is the only tool you need to launch a real technology business.
               </p>
             </div>
           </div>
