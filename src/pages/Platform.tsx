@@ -27,7 +27,7 @@ const Platform = () => {
               <span className="gradient-text font-bold"> Professional Apps in Seconds</span>
             </p>
             <p className="text-lg text-muted-foreground">
-              Completely outperforming all other vibe coding tools
+              Better than any other AI app builder
             </p>
           </div>
 
@@ -41,23 +41,23 @@ const Platform = () => {
                   <Users className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-foreground mb-4">Career Ontology<sup className="text-sm">™</sup></h3>
-                <p className="text-lg text-primary font-semibold mb-3">Professional Knowledge Graph</p>
+                <p className="text-lg text-primary font-semibold mb-3">We Know Your Industry</p>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Deep understanding of workflows for each industry</span>
+                    <span>Already knows how your job works</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Captures real pain points of professionals</span>
+                    <span>Understands real problems you face daily</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Career database with thousands of real use cases</span>
+                    <span>Built from thousands of real use cases</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Sociological research on professional behaviors & needs</span>
+                    <span>Researched from real professional needs</span>
                   </li>
                 </ul>
               </div>
@@ -71,23 +71,23 @@ const Platform = () => {
                   <Brain className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-foreground mb-4">Engeni<sup className="text-sm">™</sup> AI Engine</h3>
-                <p className="text-lg text-purple-500 font-semibold mb-3">Intelligent Code Generation</p>
+                <p className="text-lg text-purple-500 font-semibold mb-3">Smart App Builder</p>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-purple-500 flex-shrink-0 mt-0.5" />
-                    <span>Generates production-ready code, not prototypes</span>
+                    <span>Creates working apps, not just demos</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-purple-500 flex-shrink-0 mt-0.5" />
-                    <span>Auto-creates complete 4-Organ architecture</span>
+                    <span>Builds complete app structure automatically</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-purple-500 flex-shrink-0 mt-0.5" />
-                    <span>Integrates best practices from thousands of real projects</span>
+                    <span>Learns from thousands of successful projects</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-purple-500 flex-shrink-0 mt-0.5" />
-                    <span>Optimized for performance and security from day one</span>
+                    <span>Fast and secure from day one</span>
                   </li>
                 </ul>
               </div>
@@ -107,9 +107,9 @@ const Platform = () => {
               <span className="gradient-text">Apps Built By Professionals, For Professionals</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Not just beautiful code, but <span className="text-primary font-semibold">domain-accurate</span>, 
-              <span className="text-purple-500 font-semibold"> solving the right problems</span>, 
-              and <span className="text-foreground font-semibold">production-ready</span>
+              Not just beautiful apps, but <span className="text-primary font-semibold">built for your job</span>, 
+              <span className="text-purple-500 font-semibold"> solving real problems</span>, 
+              and <span className="text-foreground font-semibold">ready to use right away</span>
             </p>
           </div>
 
@@ -122,7 +122,7 @@ const Platform = () => {
                   Real Comparison
                 </span>
                 <h3 className="text-2xl md:text-3xl font-bold text-foreground">
-                  Why We <span className="gradient-text">Outperform Vibe Coding?</span>
+                  Why We're <span className="gradient-text">Better?</span>
                 </h3>
               </div>
               
@@ -130,20 +130,20 @@ const Platform = () => {
                 <div className="space-y-4">
                   <h4 className="text-lg font-semibold text-muted-foreground flex items-center gap-2">
                     <span className="w-8 h-8 bg-muted rounded-full flex items-center justify-center text-sm">❌</span>
-                    Standard Vibe Coding
+                    Other AI Tools
                   </h4>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <span className="text-destructive">•</span>
-                      <span>Only generates generic code, no industry understanding</span>
+                      <span>Generic apps—doesn't know your job</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-destructive">•</span>
-                      <span>Must re-describe every business detail</span>
+                      <span>You have to explain everything yourself</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-destructive">•</span>
-                      <span>Prototype code, needs heavy refactoring</span>
+                      <span>Demo-only, needs lots of fixing</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-destructive">•</span>
@@ -155,24 +155,24 @@ const Platform = () => {
                 <div className="space-y-4">
                   <h4 className="text-lg font-semibold text-primary flex items-center gap-2">
                     <span className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center text-sm">✓</span>
-                    RootKnow (Ontology + Engeni)
+                    RootKnow
                   </h4>
                   <ul className="space-y-3 text-foreground">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span><strong>Already understands</strong> your industry workflows & pain points</span>
+                      <span><strong>Already knows</strong> how your job works</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span><strong>Auto-applies</strong> standard business logic</span>
+                      <span><strong>Auto-adds</strong> common features for your industry</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span><strong>Production-ready</strong> from the start</span>
+                      <span><strong>Ready to use</strong> from the start</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span><strong>Integrates</strong> best practices from thousands of real projects</span>
+                      <span><strong>Built with</strong> best practices from real projects</span>
                     </li>
                   </ul>
                 </div>
@@ -192,21 +192,21 @@ const Platform = () => {
               Architecture
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-              <span className="gradient-text">The 4-Organ</span>
-              <span className="text-foreground"> Architecture</span>
+              <span className="gradient-text">4 Parts</span>
+              <span className="text-foreground"> of Every App</span>
             </h2>
             <p className="text-lg text-muted-foreground">
-              Speed without architecture is just fast failure. RootKnow generates both.
+              Fast without structure means fast failure. RootKnow gives you both.
             </p>
           </div>
 
           {/* 4-Organ System */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
             {[
-              { icon: Cpu, title: "UI (Skin)", desc: "Beautiful, responsive interfaces with modern React", delay: "0s" },
-              { icon: Database, title: "Data (Bones)", desc: "30+ normalized tables with real-time GraphQL", delay: "0.1s" },
-              { icon: Brain, title: "Brain (Logic)", desc: "External, configurable business rules engine", delay: "0.2s" },
-              { icon: Zap, title: "Nerves (Async)", desc: "Workflows, sagas & background jobs", delay: "0.3s" },
+              { icon: Cpu, title: "Look (Interface)", desc: "Beautiful screens that work on any device", delay: "0s" },
+              { icon: Database, title: "Memory (Database)", desc: "Stores all your data safely and organized", delay: "0.1s" },
+              { icon: Brain, title: "Brain (Rules)", desc: "Business rules you can change anytime", delay: "0.2s" },
+              { icon: Zap, title: "Auto-Tasks", desc: "Background work like emails and notifications", delay: "0.3s" },
             ].map((item, index) => (
               <div 
                 key={index} 
@@ -239,14 +239,14 @@ const Platform = () => {
               { 
                 num: "02", 
                 icon: Zap,
-                title: "Our Engine Builds", 
-                desc: "RootKnow's R-Engine™ instantly compiles your logic into a fully functional SaaS application (database, API, UI)." 
+                title: "We Build Everything", 
+                desc: "RootKnow instantly creates your full app—database, connections, and screens—all working together." 
               },
               { 
                 num: "03", 
                 icon: Rocket,
-                title: "Deploy & Monetize", 
-                desc: "Launch your tool internally or sell it to others. RootKnow handles hosting, compliance, and scaling." 
+                title: "Launch & Earn", 
+                desc: "Use it for yourself or sell it to others. We handle hosting and everything technical." 
               },
             ].map((step, index) => (
               <div 
@@ -292,12 +292,12 @@ const Platform = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
-              { icon: Shield, title: "Authentication", desc: "Email, social login, password reset—all working" },
-              { icon: Database, title: "Database Schema", desc: "30+ normalized tables, migrations included" },
-              { icon: Settings, title: "Admin Dashboard", desc: "User management, analytics, reports" },
-              { icon: Zap, title: "Payment Processing", desc: "Payment integration, subscriptions, webhooks" },
-              { icon: Cloud, title: "Background Jobs", desc: "Emails, notifications, async processing" },
-              { icon: Rocket, title: "Deployment Ready", desc: "Docker, CI/CD, environment configs" },
+              { icon: Shield, title: "Login System", desc: "Email, social login, password reset—all working" },
+              { icon: Database, title: "Database", desc: "Well-organized data storage with updates included" },
+              { icon: Settings, title: "Admin Dashboard", desc: "Manage users, see stats, create reports" },
+              { icon: Zap, title: "Payments", desc: "Accept payments, manage subscriptions easily" },
+              { icon: Cloud, title: "Auto-Tasks", desc: "Emails, notifications, scheduled jobs" },
+              { icon: Rocket, title: "Ready to Launch", desc: "Everything set up for you to go live" },
             ].map((item, index) => (
               <div 
                 key={index} 
@@ -317,35 +317,35 @@ const Platform = () => {
         </div>
       </section>
 
-      {/* Production-First DNA */}
+      {/* Built to Last */}
       <section className="py-16 lg:py-24 bg-muted/30 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
         
         <div className="container max-w-4xl relative z-10">
           <div className="text-center mb-12 animate-fade-in">
             <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6">
-              Production Ready
+              Built to Last
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              <span className="gradient-text">Production-First</span> DNA
+              <span className="gradient-text">Real Apps</span>, Not Demos
             </h2>
             <p className="text-lg text-muted-foreground">
-              RootKnow generates production systems, not demos.
+              Everything you need for a professional, reliable app.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-4">
             {[
-              "Error boundaries & graceful fallbacks",
-              "Retry logic with exponential backoff",
-              "Circuit breakers for external services",
-              "Health checks & readiness probes",
-              "Observability & monitoring ready",
-              "ACID transactions & data integrity",
-              "Input validation schemas",
-              "SQL injection & XSS protection",
-              "CSRF tokens & rate limiting",
-              "Audit logs for compliance",
+              "Handles errors without crashing",
+              "Retries automatically when something fails",
+              "Stays stable even when other services are down",
+              "Checks itself to make sure everything works",
+              "Easy to monitor and track issues",
+              "Your data stays safe and accurate",
+              "Validates all user input",
+              "Protected against common attacks",
+              "Limits spam and abuse",
+              "Tracks all activity for records",
             ].map((item, index) => (
               <div 
                 key={index} 

@@ -28,9 +28,9 @@ const Pricing = () => {
       features: [
         "95% Complete App",
         "Full Tech Stack",
-        "Authentication & Payments",
+        "Login & Payments",
         "Admin Dashboard",
-        "Background Jobs",
+        "Auto-Tasks (emails, etc.)",
         "Priority Support",
         "You Own the Code",
       ],
@@ -45,11 +45,11 @@ const Pricing = () => {
       subtext: "Custom solutions",
       features: [
         "Unlimited Projects",
-        "Custom Ontology Mapping",
-        "On-premise Deployment",
-        "SLA Support (99.9%)",
-        "Dedicated Account Manager",
-        "Custom Integrations",
+        "Custom Industry Setup",
+        "Your Own Servers",
+        "99.9% Uptime Guarantee",
+        "Dedicated Support Manager",
+        "Custom Connections",
       ],
       cta: "Contact Sales",
       highlighted: false,
@@ -57,38 +57,38 @@ const Pricing = () => {
   ];
 
   const comparison = [
-    { feature: "Completeness", rootknow: "95%", others: "60%" },
-    { feature: "Time to Deploy", rootknow: "2-4 hours", others: "1-2 weeks" },
-    { feature: "Pricing Model", rootknow: "Fixed, one-time", others: "Credit burnout" },
-    { feature: "Business Rules", rootknow: "External config", others: "Hardcoded" },
-    { feature: "Async Workflows", rootknow: "Built-in", others: "Blocking" },
+    { feature: "How Complete", rootknow: "95%", others: "60%" },
+    { feature: "Time to Launch", rootknow: "2-4 hours", others: "1-2 weeks" },
+    { feature: "Pricing", rootknow: "Pay once", others: "Monthly fees" },
+    { feature: "Business Rules", rootknow: "Easy to change", others: "Hard to change" },
+    { feature: "Auto-Tasks", rootknow: "Included", others: "Extra work" },
     { feature: "Code Ownership", rootknow: "100% yours", others: "Varies" },
   ];
 
   const faqs = [
     {
-      question: "Why one-time pricing instead of subscription?",
-      answer: "You pay once, you own the code forever. No credit burnout, no monthly surprises. Traditional development costs $50k+. RootKnow gives you production-ready code for $800.",
+      question: "Why pay once instead of monthly?",
+      answer: "You pay once, you own the app forever. No surprise bills, no monthly fees. Normal developers charge $50,000+. RootKnow gives you a working app for $800.",
     },
     {
-      question: "What if RootKnow goes away?",
-      answer: "You own the generated code. It's your repo. If RootKnow disappeared tomorrow, you have a working app using standard tech stack. Any dev can maintain it.",
+      question: "What if RootKnow disappears?",
+      answer: "You own your app completely. It's in your account. Even if RootKnow closed tomorrow, your app keeps working. Any developer can maintain it.",
     },
     {
-      question: "Can RootKnow integrate with specific services?",
-      answer: "If it has an API, yes. RootKnow generates standard code—add any API call you need. Common integrations (payment, email, analytics) are built-in.",
+      question: "Can RootKnow connect to other services?",
+      answer: "Yes! If a service has a way to connect, RootKnow can use it. Common features like payments, email, and analytics are already built-in.",
     },
     {
-      question: "My industry is unique, will this work?",
-      answer: "Most apps are: users, content, transactions, permissions. The business logic is unique—that's why RootKnow uses external configuration for business rules.",
+      question: "Will this work for my specific industry?",
+      answer: "Most apps are about: users, content, transactions, and permissions. What makes YOUR app unique is your business rules—and those are easy to change in RootKnow.",
     },
     {
-      question: "How secure is RootKnow-generated code?",
-      answer: "Multi-layer security: input validation, SQL injection prevention, XSS protection, CSRF tokens, rate limiting. You own the code—run your own security audit.",
+      question: "Is the app secure?",
+      answer: "Yes! Multiple layers of protection are built-in: data validation, attack prevention, and security checks. You own the code—you can verify it yourself.",
     },
     {
       question: "What's the catch?",
-      answer: "No catch. The economics are different: Traditional = 1 app per 3 months. RootKnow = 1 app per 4 hours. We trade time for volume—more apps at accessible pricing.",
+      answer: "No catch. Traditional developers: 1 app in 3 months. RootKnow: 1 app in 4 hours. We build more apps at lower prices—everyone wins.",
     },
   ];
 
