@@ -22,8 +22,9 @@ const Pricing = () => {
         "Community Support",
         "See Your App in Action",
       ],
-      cta: "Try Free",
+      cta: "Request Early Access",
       highlighted: false,
+      link: "/waitlist",
     },
     {
       name: "PROFESSIONAL",
@@ -39,9 +40,10 @@ const Pricing = () => {
         "Priority Support",
         "Export & Own Your Code",
       ],
-      cta: "Start Building",
+      cta: "Request Early Access",
       highlighted: true,
       badge: "Most Popular",
+      link: "/waitlist",
     },
     {
       name: "ENTERPRISE",
@@ -59,6 +61,7 @@ const Pricing = () => {
       ],
       cta: "Contact Sales",
       highlighted: false,
+      link: "mailto:management@rootknow.com",
     },
   ];
 
@@ -171,7 +174,7 @@ const Pricing = () => {
                   className={`w-full ${plan.highlighted ? 'bg-gradient-to-r from-primary to-accent hover:opacity-90' : ''}`}
                   asChild
                 >
-                  <Link to={plan.name === "ENTERPRISE" ? "mailto:management@rootknow.com" : "/app"}>
+                  <Link to={plan.link}>
                     {plan.cta}
                   </Link>
                 </Button>
