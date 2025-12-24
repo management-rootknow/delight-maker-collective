@@ -25,8 +25,8 @@ const Platform = () => {
             </p>
             
             <Button size="lg" className="text-lg px-8 py-6 mb-8 group" asChild>
-              <Link to="/login">
-                Start Building
+              <Link to="/waitlist">
+                Request Early Access
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Link>
             </Button>
