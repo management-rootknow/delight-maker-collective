@@ -31,11 +31,8 @@ const Header = () => {
 
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center gap-3">
-          <Button variant="ghost" asChild className="hover:bg-primary/10">
-            <Link to="/app">Login</Link>
-          </Button>
           <Button asChild className="glow-primary">
-            <Link to="/app">Start Building</Link>
+            <Link to="/waitlist">Request Early Access</Link>
           </Button>
         </div>
 
@@ -74,11 +71,8 @@ const Header = () => {
               About
             </Link>
             <div className="flex flex-col gap-2 pt-4 border-t border-border">
-              <Button variant="ghost" asChild className="justify-start">
-                <Link to="/app" onClick={() => setMobileMenuOpen(false)}>Login</Link>
-              </Button>
               <Button asChild>
-                <Link to="/app" onClick={() => setMobileMenuOpen(false)}>Start Building</Link>
+                <Link to="/waitlist" onClick={() => setMobileMenuOpen(false)}>Request Early Access</Link>
               </Button>
             </div>
           </nav>
